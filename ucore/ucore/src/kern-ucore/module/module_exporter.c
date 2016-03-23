@@ -1,26 +1,3 @@
-/*
- * =====================================================================================
- *
- *       Filename:  module_exporter.c
- *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  07/22/2012 04:14:23 PM
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Chen Yuheng (Chen Yuheng), chyh1990@163.com
- *   Organization:  Tsinghua Unv.
- *
- * =====================================================================================
- */
-#include <linux/kernel.h>
-#include <linux/module.h>
-
-#include "uaccess_glue.h"
-
-EXPORT_SYMBOL(__kmalloc);
-EXPORT_SYMBOL(krealloc);
-EXPORT_SYMBOL(__memzero);
-EXPORT_SYMBOL(printk);
+version https://git-lfs.github.com/spec/v1
+oid sha256:7587ee80728aa1dbc1f62c90003e4872e6bab7fd90e08eda510ed7c526e2a919
+size 653

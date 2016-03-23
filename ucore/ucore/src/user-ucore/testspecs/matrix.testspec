@@ -1,14 +1,3 @@
-@program	/testbin/matrix
-@timeout	500
-
-  - 'kernel_execve: pid = [0-9]{1,2}, name = "/testbin/matrix".'
-    'fork ok.'
-    'pid 4 done!.'
-    'pid 7 done!.'
-    'pid 13 done!.'
-    'pid 17 done!.'
-    'pid 22 done!.'
-    'matrix pass.'
-    'all user-mode processes have quit.'
-    'init check memory pass.'
-! - 'user panic at .*'
+version https://git-lfs.github.com/spec/v1
+oid sha256:e9a9ddbf93bda7e086dcb01b2124d7e01a6d71f5e9fb055343c2df08432cf716
+size 330

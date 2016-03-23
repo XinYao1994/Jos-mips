@@ -1,34 +1,3 @@
-/* include/linux/if_pppopns.h
- *
- * Header for PPP on PPTP Network Server / PPPoPNS Socket (RFC 2637)
- *
- * Copyright (C) 2009 Google, Inc.
- * Author: Chia-chi Yeh <chiachi@android.com>
- *
- * This software is licensed under the terms of the GNU General Public
- * License version 2, as published by the Free Software Foundation, and
- * may be copied, distributed, and modified under those terms.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- */
-
-#ifndef __LINUX_IF_PPPOPNS_H
-#define __LINUX_IF_PPPOPNS_H
-
-#include <linux/socket.h>
-#include <linux/types.h>
-
-#define PX_PROTO_OPNS	3
-
-struct sockaddr_pppopns {
-	sa_family_t sa_family;	/* AF_PPPOX */
-	unsigned int sa_protocol;	/* PX_PROTO_OPNS */
-	int tcp_socket;
-	__u16 local;
-	__u16 remote;
-} __attribute__ ((packed));
-
-#endif /* __LINUX_IF_PPPOPNS_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:80b86c668a3375c9857197931255f3571d70ae00358314bada67cd0fa072acbc
+size 1006

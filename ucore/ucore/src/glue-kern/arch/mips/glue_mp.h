@@ -1,16 +1,3 @@
-#ifndef __GLUE_MP_H__
-#define __GLUE_MP_H__
-#define LAPIC_COUNT 1
-
-#define PLS
-
-#define pls_read(var) pls_##var
-
-#define pls_get_ptr(var) &pls_##var
-
-#define pls_write(var, value)											\
-	do {																\
-		pls_##var = value;                                              \
-	} while (0)
-
-#endif /* !__GLUE_MP_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:9949572775b644c76701026584fff5254b64d1eacb26ac7a46436dad96380861
+size 325

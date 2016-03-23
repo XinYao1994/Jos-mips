@@ -1,14 +1,3 @@
-#ifndef _ASM_ARM_FTRACE
-#define _ASM_ARM_FTRACE
-
-#ifdef CONFIG_FUNCTION_TRACER
-#define MCOUNT_ADDR		((long)(mcount))
-#define MCOUNT_INSN_SIZE	4	/* sizeof mcount call */
-
-#ifndef __ASSEMBLY__
-extern void mcount(void);
-#endif
-
-#endif
-
-#endif /* _ASM_ARM_FTRACE */
+version https://git-lfs.github.com/spec/v1
+oid sha256:3ca4d886e24ddedf8f04edbd96b67c259af5495e6aad8b9332deb906f1db3349
+size 262

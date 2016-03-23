@@ -1,13 +1,3 @@
-@program	/testbin/yield
-
-  - 'kernel_execve: pid = [0-9]{1,2}, name = "/testbin/yield".'
-  - 'Hello, I am process [0-9]{1,2}.'
-  - 'Back in process [0-9]{1,2}, iteration 0.'
-  - 'Back in process [0-9]{1,2}, iteration 1.'
-  - 'Back in process [0-9]{1,2}, iteration 2.'
-  - 'Back in process [0-9]{1,2}, iteration 3.'
-  - 'Back in process [0-9]{1,2}, iteration 4.'
-  - 'All done in process [0-9]{1,2}.'
-    'yield pass.'
-    'all user-mode processes have quit.'
-    'init check memory pass.'
+version https://git-lfs.github.com/spec/v1
+oid sha256:197bfdecb395cc10e7f52927fc0921df790638e155a7b03f258a2eebb0cbc6ec
+size 489

@@ -1,14 +1,3 @@
-cd test
-mkdir pp
-cd pp
-ls /bin | cat > qq
-link qq pp
-ls
-cd ..
-link pp/pp orz
-unlink pp/pp pp/qq
-rename pp qq
-unlink qq
-unlink orz
-echo test2.sh end.
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:f0d690fb6e606ffc7f81193483e344967e6c24147ccb69f9e2dde624719b44d0
+size 150

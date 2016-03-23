@@ -1,8 +1,3 @@
-#include <signum.h>
-
-sighandler_t signal(int sign, sighandler_t handler);
-int tkill(int pid, int sign);
-int kill_bionic(int pid, int sign);
-int sigprocmask(int how, const sigset_t * set, sigset_t * old);
-int sigsuspend(uint32_t mask);
-int set_shellrun_pid();
+version https://git-lfs.github.com/spec/v1
+oid sha256:57a05af08211a9f6ba5ea4fce8054c2a377cc3580cd65c427ce5fe7864406f0d
+size 259

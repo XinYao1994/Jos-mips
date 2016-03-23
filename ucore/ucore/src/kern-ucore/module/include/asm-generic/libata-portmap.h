@@ -1,7 +1,3 @@
-#ifndef __ASM_GENERIC_LIBATA_PORTMAP_H
-#define __ASM_GENERIC_LIBATA_PORTMAP_H
-
-#define ATA_PRIMARY_IRQ(dev)	14
-#define ATA_SECONDARY_IRQ(dev)	15
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:86fdc03aee96781ac5c3e71b3f36569e36dc26ef7207a144c5b91e57fc9a49d4
+size 153

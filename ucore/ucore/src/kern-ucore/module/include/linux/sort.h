@@ -1,10 +1,3 @@
-#ifndef _LINUX_SORT_H
-#define _LINUX_SORT_H
-
-#include <linux/types.h>
-
-void sort(void *base, size_t num, size_t size,
-	  int (*cmp) (const void *, const void *),
-	  void (*swap) (void *, void *, int));
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:793440d13245858a1a1a0f6114202aee11c9d54fab592ff0a561324e999f839a
+size 210

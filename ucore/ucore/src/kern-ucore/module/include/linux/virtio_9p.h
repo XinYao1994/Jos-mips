@@ -1,12 +1,3 @@
-#ifndef _LINUX_VIRTIO_9P_H
-#define _LINUX_VIRTIO_9P_H
-/* This header is BSD licensed so anyone can use the definitions to implement
- * compatible drivers/servers. */
-#include <linux/virtio_config.h>
-
-/* The ID for virtio console */
-#define VIRTIO_ID_9P	9
-/* Maximum number of virtio channels per partition (1 for now) */
-#define MAX_9P_CHAN	1
-
-#endif /* _LINUX_VIRTIO_9P_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:2d9c38eabc57c2d57bbbe3f5266bf421ca6df5b5731e3c8c9962f8e2d3cc82bd
+size 376

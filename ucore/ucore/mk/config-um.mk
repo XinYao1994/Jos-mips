@@ -1,21 +1,3 @@
-export HOST_CC_PREFIX	?=
-export TARGET_CC_PREFIX	?= 
-export TARGET_CC_FLAGS_COMMON	?=
-export TARGET_CC_FLAGS_BL		?=	
-export TARGET_CC_FLAGS_KERNEL	?=	-fno-builtin -nostdinc -fno-stack-protector
-export TARGET_CC_FLAGS_SV		?=	-fno-builtin -nostdinc -fno-stack-protector
-export TARGET_CC_FLAGS_USER		?=	-fno-builtin -nostdinc -fno-stack-protector
-export TARGET_LD_FLAGS			?=	-nostdlib
-
-BOOTLOADER	:= ${T_OBJ}/bootloader
-KERNEL		:= ${T_OBJ}/kernel
-SWAPIMG		:= ${T_OBJ}/swap.img
-FSIMG		:= ${T_OBJ}/sfs.img
-MEM 		:= 128M
-BOOT_OPTS	:= --kernel=$(KERNEL) --swap=$(SWAPIMG) --memsize=$(MEM) --disk=$(FSIMG)
-
-run: all
-	${V}${BOOTLOADER} $(BOOT_OPTS)
-
-debug: all
-	${V}/usr/bin/gdb -q -x gdbinit.${ARCH}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8c75ed1d4db7759ac5d9695a34dbdff1a07fee931657ae48054fe926b685b160
+size 692

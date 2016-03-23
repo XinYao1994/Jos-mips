@@ -1,23 +1,3 @@
-/*
- * =====================================================================================
- *
- *       Filename:  arch.h
- *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  03/20/2012 10:57:09 AM
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Chen Yuheng (Chen Yuheng), chyh1990@163.com
- *   Organization:  Tsinghua Unv.
- *
- * =====================================================================================
- */
-#ifndef __ARM_MACH_ARCH_H
-#define __ARM_MACH_ARCH_H
-
-#include <arm.h>
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:37677ddba7a6146b071f110a4b3452de52674a6efb8bc539b444bdde2ceb5752
+size 540

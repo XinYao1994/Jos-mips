@@ -1,22 +1,3 @@
-/*
- * linux/include/linux/sunrpc/types.h
- *
- * Generic types and misc stuff for RPC.
- *
- * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
- */
-
-#ifndef _LINUX_SUNRPC_TYPES_H_
-#define _LINUX_SUNRPC_TYPES_H_
-
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/sunrpc/debug.h>
-#include <linux/list.h>
-
-/*
- * Shorthands
- */
-#define signalled()		(signal_pending(current))
-
-#endif /* _LINUX_SUNRPC_TYPES_H_ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:63cd3fea957ffacb5ef73c652368a7eb0222a3c9fa0bb9de0cdc577f79dffbc5
+size 426

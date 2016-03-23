@@ -1,15 +1,3 @@
-#include <ulib.h>
-#include <stdio.h>
-
-int main(void)
-{
-	int i;
-	cprintf("Hello, I am process %d.\n", getpid());
-	for (i = 0; i < 5; i++) {
-		yield();
-		cprintf("Back in process %d, iteration %d.\n", getpid(), i);
-	}
-	cprintf("All done in process %d.\n", getpid());
-	cprintf("yield pass.\n");
-	return 0;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e2208849219d0c7c6fa25241bc9950e36d027f41bd2efbdd0ddb6c25488db970
+size 305

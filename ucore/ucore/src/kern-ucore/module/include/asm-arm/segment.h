@@ -1,10 +1,3 @@
-#ifndef __ASM_ARM_SEGMENT_H
-#define __ASM_ARM_SEGMENT_H
-
-#define __KERNEL_CS   0x0
-#define __KERNEL_DS   0x0
-
-#define __USER_CS     0x1
-#define __USER_DS     0x1
-
-#endif /* __ASM_ARM_SEGMENT_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:24e29ec13eb6172ebb4b8db05109b0b79f7ae74f301dd0b9c47a7570354464f4
+size 196

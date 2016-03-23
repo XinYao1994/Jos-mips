@@ -1,24 +1,3 @@
-#ifndef ASMARM_SPARSEMEM_H
-#define ASMARM_SPARSEMEM_H
-
-#include <asm/memory.h>
-
-/*
- * Two definitions are required for sparsemem:
- *
- * MAX_PHYSMEM_BITS: The number of physical address bits required
- *   to address the last byte of memory.
- *
- * SECTION_SIZE_BITS: The number of physical address bits to cover
- *   the maximum amount of memory in a section.
- *
- * Eg, if you have 2 banks of up to 64MB at 0x80000000, 0x84000000,
- * then MAX_PHYSMEM_BITS is 32, SECTION_SIZE_BITS is 26.
- *
- * Define these in your mach/memory.h.
- */
-#if !defined(SECTION_SIZE_BITS) || !defined(MAX_PHYSMEM_BITS)
-#error Sparsemem is not supported on this platform
-#endif
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:91d0fad0be518ab43550dfa4dc27d3c6a58fbe221e655fcf3684b9def10ab0f2
+size 660

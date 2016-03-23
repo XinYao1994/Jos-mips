@@ -1,13 +1,3 @@
-#ifndef __NIOS2_KERN_DRIVER_IRQ_H__
-#define __NIOS2_KERN_DRIVER_IRQ_H__
-
-#include <types.h>
-
-void irq_init(void);
-
-inline int alt_irq_disable(uint32_t id);
-inline int alt_irq_enable(uint32_t id);
-
-#define IRQ_OFFSET		32
-
-#endif /* !__NIOS2_KERN_DRIVER_IRQ_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:053ee09a5fe731fe5acd68419a2f381996973da55adbab4ab19a84f49e73f8ab
+size 263

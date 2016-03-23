@@ -1,11 +1,3 @@
-BOOTSECT   := $(T_OBJ)/loader.bin
-
-all: $(BOOTSECT)
-
-$(BOOTSECT): arch/${ARCH}/bootasm.S
-	${V}mkdir $(T_OBJ)
-	$(CC) -fno-builtin -nostdlib  -nostdinc -g  -EL -G0 -fno-delayed-branch -Wa,-O0 -c -o $(T_OBJ)/loader.o $^
-	$(LD) -EL -n -G0 -Ttext 0xbfc00000 -o $(T_OBJ)/loader $(T_OBJ)/loader.o
-	$(OBJCOPY) -O binary  -S $(T_OBJ)/loader $@
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:e2a1e8ada359bd218f4a054243b99f7e3c04e29a90ecf858581762f741625120
+size 337

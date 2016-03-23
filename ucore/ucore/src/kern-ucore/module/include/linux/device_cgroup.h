@@ -1,17 +1,3 @@
-#include <linux/module.h>
-#include <linux/fs.h>
-
-#ifdef CONFIG_CGROUP_DEVICE
-extern int devcgroup_inode_permission(struct inode *inode, int mask);
-extern int devcgroup_inode_mknod(int mode, dev_t dev);
-#else
-static inline int devcgroup_inode_permission(struct inode *inode, int mask)
-{
-	return 0;
-}
-
-static inline int devcgroup_inode_mknod(int mode, dev_t dev)
-{
-	return 0;
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:82f74723060aee2b1e412af0350d84781c0aee17a2ad4737c195e9a319efd7e5
+size 383

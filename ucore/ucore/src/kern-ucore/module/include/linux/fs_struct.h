@@ -1,21 +1,3 @@
-#ifndef _LINUX_FS_STRUCT_H
-#define _LINUX_FS_STRUCT_H
-
-#include <linux/path.h>
-
-struct fs_struct {
-	atomic_t count;
-	rwlock_t lock;
-	int umask;
-	struct path root, pwd;
-};
-
-extern struct kmem_cache *fs_cachep;
-
-extern void exit_fs(struct task_struct *);
-extern void set_fs_root(struct fs_struct *, struct path *);
-extern void set_fs_pwd(struct fs_struct *, struct path *);
-extern struct fs_struct *copy_fs_struct(struct fs_struct *);
-extern void put_fs_struct(struct fs_struct *);
-
-#endif /* _LINUX_FS_STRUCT_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:4d0487ed089f9eeda6b5dec680fcad36d9c7f6e40de5ce8b40f6cf27a5325916
+size 513

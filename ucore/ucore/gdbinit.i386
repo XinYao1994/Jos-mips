@@ -1,4 +1,3 @@
-target remote :1234
-define hook-stop
-x/i $pc
-end
+version https://git-lfs.github.com/spec/v1
+oid sha256:abbb3bc852acffcad4fcfd3f1df44e9a8517b7bf2ed78f1595d426ae702046ce
+size 49

@@ -1,26 +1,3 @@
-#ifndef __KERN_NIOS2_SYNC_SYNC_H__
-#define __KERN_NIOS2_SYNC_SYNC_H__
-
-//#include <mmu.h>
-#include <assert.h>
-//#include <atomic.h>
-//#include <sched.h>
-#include <nios2.h>
-
-static inline int __intr_save(void)
-{
-	int context;
-	NIOS2_READ_STATUS(context);
-	NIOS2_WRITE_STATUS(context & ~NIOS2_STATUS_PIE_MSK);
-	return context;
-}
-
-static inline void __intr_restore(int flag)
-{
-	NIOS2_WRITE_STATUS(flag);
-}
-
-#define local_intr_save(x)      do { x = __intr_save(); } while (0)
-#define local_intr_restore(x)   __intr_restore(x);
-
-#endif /* !__KERN_NIOS2_SYNC_SYNC_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:a572479ecc0134d07e0f1c3d12990b57f0b9e8ab8273fbc676d1528083a012b3
+size 565

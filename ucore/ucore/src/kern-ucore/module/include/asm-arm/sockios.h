@@ -1,13 +1,3 @@
-#ifndef __ARCH_ARM_SOCKIOS_H
-#define __ARCH_ARM_SOCKIOS_H
-
-/* Socket-level I/O control calls. */
-#define FIOSETOWN 	0x8901
-#define SIOCSPGRP	0x8902
-#define FIOGETOWN	0x8903
-#define SIOCGPGRP	0x8904
-#define SIOCATMARK	0x8905
-#define SIOCGSTAMP	0x8906	/* Get stamp (timeval) */
-#define SIOCGSTAMPNS	0x8907	/* Get stamp (timespec) */
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:395c45651c38b4eefda3fb15712a400afaa2ea997bd1deacf0ba7d1dcf317181
+size 339

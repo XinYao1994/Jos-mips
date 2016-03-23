@@ -1,13 +1,3 @@
-.PHONY: all
-
-SRCFILES   := ${ARCH}/sign.c
-T_CC_FLAGS := -Wall -O2 -D_FILE_OFFSET_BITS=64
-
-include ${T_BASE}/mk/comph.mk
-include ${T_BASE}/mk/template.mk
-
-all: ${T_OBJ}/tools-sign
-
-${T_OBJ}/tools-sign: ${OBJFILES}
-	@echo LD $@
-	${V}${CC} -o$@ $^
+version https://git-lfs.github.com/spec/v1
+oid sha256:776039892617c6e99114b3448eb91e01af32fd6093d1ff4a6e12876940ab1d40
+size 245

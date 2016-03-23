@@ -1,15 +1,3 @@
-/*
- * Arch specific extensions to struct device
- *
- * This file is released under the GPLv2
- */
-#ifndef ASMARM_DEVICE_H
-#define ASMARM_DEVICE_H
-
-struct dev_archdata {
-#ifdef CONFIG_DMABOUNCE
-	struct dmabounce_device_info *dmabounce;
-#endif
-};
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:67d9525555c6fb889e5deda81adfd774b6b8cd0988c4b64a35e857dc650d6359
+size 251

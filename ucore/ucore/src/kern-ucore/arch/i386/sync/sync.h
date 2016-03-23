@@ -1,32 +1,3 @@
-#ifndef __KERN_SYNC_SYNC_H__
-#define __KERN_SYNC_SYNC_H__
-
-#include <arch.h>
-#include <intr.h>
-#include <mmu.h>
-#include <assert.h>
-#include <atomic.h>
-#include <sched.h>
-
-static inline bool __intr_save(void)
-{
-	if (read_eflags() & FL_IF) {
-		intr_disable();
-		return 1;
-	}
-	return 0;
-}
-
-static inline void __intr_restore(bool flag)
-{
-	if (flag) {
-		intr_enable();
-	}
-}
-
-#define local_intr_save(x)      do { x = __intr_save(); } while (0)
-#define local_intr_restore(x)   __intr_restore(x);
-
-void sync_init(void);
-
-#endif /* !__KERN_SYNC_SYNC_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:8e339171fe51a2f2001cd2e320cc056186c4aae11d4d20b96cbe786ebbdf96a3
+size 549

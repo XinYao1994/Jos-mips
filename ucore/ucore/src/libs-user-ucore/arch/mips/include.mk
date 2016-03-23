@@ -1,4 +1,3 @@
-ARCH_CFLAGS := -mips1 -g  -EL -G0 -fno-delayed-branch -Wall -O0 -DMACH_QEMU
-ARCH_LDFLAGS := 
-ARCH_OBJS := syscall.o initcode.o intr.o clone.o udivmod.o udivmodsi4.o divmod.o
-ARCH_INITCODE_OBJ := initcode.o
+version https://git-lfs.github.com/spec/v1
+oid sha256:4e0a77954376a96eaba7ef49f5cb661b9b918024aab7b7eb87df1aa3c20bbad1
+size 206

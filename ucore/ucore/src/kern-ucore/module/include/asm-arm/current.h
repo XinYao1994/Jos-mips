@@ -1,15 +1,3 @@
-#ifndef _ASMARM_CURRENT_H
-#define _ASMARM_CURRENT_H
-
-#include <linux/thread_info.h>
-
-static inline struct task_struct *get_current(void) __attribute_const__;
-
-static inline struct task_struct *get_current(void)
-{
-	return current_thread_info()->task;
-}
-
-#define current (get_current())
-
-#endif /* _ASMARM_CURRENT_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:98e441ddad293950a8f73b1a3f00efb9e9d81eb6ff7f18727ce1c0a8541a65ac
+size 317

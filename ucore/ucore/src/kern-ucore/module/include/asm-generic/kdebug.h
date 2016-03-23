@@ -1,9 +1,3 @@
-#ifndef _ASM_GENERIC_KDEBUG_H
-#define _ASM_GENERIC_KDEBUG_H
-
-enum die_val {
-	DIE_UNUSED,
-	DIE_OOPS = 1
-};
-
-#endif /* _ASM_GENERIC_KDEBUG_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:fde11494b2c8b70f56d7dd033a897c9e663bd0a9847928c2cdcc88eade7321b4
+size 142

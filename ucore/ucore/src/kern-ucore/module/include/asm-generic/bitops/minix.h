@@ -1,15 +1,3 @@
-#ifndef _ASM_GENERIC_BITOPS_MINIX_H_
-#define _ASM_GENERIC_BITOPS_MINIX_H_
-
-#define minix_test_and_set_bit(nr,addr)	\
-	__test_and_set_bit((nr),(unsigned long *)(addr))
-#define minix_set_bit(nr,addr)		\
-	__set_bit((nr),(unsigned long *)(addr))
-#define minix_test_and_clear_bit(nr,addr) \
-	__test_and_clear_bit((nr),(unsigned long *)(addr))
-#define minix_test_bit(nr,addr)		\
-	test_bit((nr),(unsigned long *)(addr))
-#define minix_find_first_zero_bit(addr,size) \
-	find_first_zero_bit((unsigned long *)(addr),(size))
-
-#endif /* _ASM_GENERIC_BITOPS_MINIX_H_ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:43a0db841842db018b4de8b9997149a9382c79e83f766e52e0619fe91ca5ec09
+size 556

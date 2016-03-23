@@ -1,20 +1,3 @@
-/*
- *  linux/arch/arm/lib/testchangebit.S
- *
- *  Copyright (C) 1995-1996 Russell King
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
-#include <linux/linkage.h>
-#include <asm/assembler.h>
-#include "bitops.h"
-                .text
-
-ENTRY(_test_and_change_bit_be)
-		eor	r0, r0, #0x18		@ big endian byte ordering
-ENTRY(_test_and_change_bit_le)
-	testop	eor, strb
-ENDPROC(_test_and_change_bit_be)
-ENDPROC(_test_and_change_bit_le)
+version https://git-lfs.github.com/spec/v1
+oid sha256:68b0b6ef5f31605ac9e43235c5514fdfa491dbcb8bc5976a1a5dfea7e7029d10
+size 571

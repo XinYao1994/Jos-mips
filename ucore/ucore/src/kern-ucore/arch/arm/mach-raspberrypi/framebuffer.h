@@ -1,8 +1,3 @@
-#ifndef FRAMEBUFFER_H
-#define FRAMEBUFFER_H
-
-extern void fb_init(void);
-extern void fb_write(unsigned char ch);
-extern void fb_init_mmu(void);
-
-#endif /* FRAMEBUFFER_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:4ae12c8093e7041408fde1e77008f3d633fbae14b7ca638a871892b389c46709
+size 171

@@ -1,14 +1,3 @@
-#include "mount.h"
-#include <syscall.h>
-
-int
-mount(const char *source, const char *target, const char *filesystemtype,
-      const void *data)
-{
-	return sys_mount(source, target, filesystemtype, data);
-}
-
-int umount(const char *target)
-{
-	return sys_umount(target);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ff31df107a132476a68c6de7756d385f675d087bfef5bbcb6f6214359dc00f0e
+size 268

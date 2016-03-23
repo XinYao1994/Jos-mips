@@ -1,12 +1,3 @@
-#ifndef __LIBS_DIRENT_H__
-#define __LIBS_DIRENT_H__
-
-#include <defs.h>
-#include <unistd.h>
-
-struct dirent {
-	off_t offset;
-	char name[FS_MAX_FNAME_LEN + 1];
-};
-
-#endif /* !__LIBS_DIRENT_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:ea2969c4b2814d463f6db40c747965ad158c293341a15616b90b20e067778b3b
+size 193

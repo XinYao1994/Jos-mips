@@ -1,15 +1,3 @@
-#ifndef __ARCH_TEMPLATE_INCLUDE_ARCH_PROC_H__
-#define __ARCH_TEMPLATE_INCLUDE_ARCH_PROC_H__
-
-#include <types.h>
-
-/* !TODO: define the context for process switch. */
-struct context {
-	uint32_t gprs[31];
-};
-
-/* !TODO: place any architecture-dependent PCB info here */
-struct arch_proc_struct {
-};
-
-#endif /* !__ARCH_TEMPLATE_INCLUDE_ARCH_PROC_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:7571a346718b2181d4ec9b7bb4245830d1ead7fd7d3c094a9a4f0997a7e97ca1
+size 348

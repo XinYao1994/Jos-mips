@@ -1,17 +1,3 @@
-SRCFILES	+= $(filter %.c %.S, $(wildcard arch/${ARCH}/*))
-T_CC_ALL_FLAGS	+= -Iarch/${ARCH} -D__ARCH_I386__ -m32
-
-include ${T_BASE}/mk/compbl.mk
-include ${T_BASE}/mk/template.mk
-
-all: ${T_OBJ}/bootsect
-
-${T_OBJ}/bootsect: ${T_OBJ}/bootloader ${HT_SIGN}
-	@echo OBJCOPY $@
-	${V}${OBJCOPY} -S -O binary $< $@.original
-	@${HT_SIGN} $@.original $@
-
-${T_OBJ}/bootloader: ${OBJFILES}
-	@echo LD $@
-	${V}${LD} -N -e start -Tarch/${ARCH}/bootloader.ld -o$@ ${OBJFILES}
-	${V}${STRIP} -g -R .eh_frame $@
+version https://git-lfs.github.com/spec/v1
+oid sha256:24f5841d188837471466bf4aaea17101d9fe362d7f0509ac75832e0fcc66ec1c
+size 491

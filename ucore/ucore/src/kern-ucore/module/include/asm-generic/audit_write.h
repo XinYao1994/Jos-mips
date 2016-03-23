@@ -1,12 +1,3 @@
-#include <asm-generic/audit_dir_write.h>
-__NR_acct,
-#ifdef __NR_swapon
-    __NR_swapon,
-#endif
-    __NR_quotactl, __NR_truncate,
-#ifdef __NR_truncate64
-    __NR_truncate64,
-#endif
-#ifdef __NR_bind
-    __NR_bind,			/* bind can affect fs object only in one way... */
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:3ff33e11d55f575b754fb6e2df7e7c5fecfb98ef890bbc5ee816f573837ed759
+size 272

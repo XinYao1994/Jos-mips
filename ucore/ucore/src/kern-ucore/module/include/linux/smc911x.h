@@ -1,13 +1,3 @@
-#ifndef __SMC911X_H__
-#define __SMC911X_H__
-
-#define SMC911X_USE_16BIT (1 << 0)
-#define SMC911X_USE_32BIT (1 << 1)
-
-struct smc911x_platdata {
-	unsigned long flags;
-	unsigned long irq_flags;	/* IRQF_... */
-	int irq_polarity;
-};
-
-#endif /* __SMC911X_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:c595187c624ab3666a1cd98803cb75e30dcd7389a12d07ba04393d1998d5e294
+size 255

@@ -1,4 +1,3 @@
-CC      := ${TARGET_CC_PREFIX}gcc ${TARGET_CC_FLAGS_COMMON} ${TARGET_CC_FLAGS_SV}
-LD		:= ${TARGET_CC_PREFIX}ld ${TARGET_LD_FLAGS}
-
-include ${T_BASE}/mk/compopt.mk
+version https://git-lfs.github.com/spec/v1
+oid sha256:24d201cec95508dbcb46dada450e28178e398d860750d3b3ec60aeee6f3fda27
+size 163

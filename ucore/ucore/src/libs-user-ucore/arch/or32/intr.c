@@ -1,14 +1,3 @@
-#include <intr.h>
-#include <arch.h>
-
-/* intr_enable - enable irq interrupt */
-void intr_enable(void)
-{
-	//mtspr (SPR_SR, mfspr (SPR_SR) | SPR_SR_IEE | SPR_SR_TEE);
-}
-
-/* intr_disable - disable irq interrupt */
-void intr_disable(void)
-{
-	//mtspr (SPR_SR, mfspr (SPR_SR) & (~(SPR_SR_IEE | SPR_SR_TEE)));
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e5f39d972b14abd05d024228c5756bbefce81596fe509df24bb0eeb24dedd57f
+size 304

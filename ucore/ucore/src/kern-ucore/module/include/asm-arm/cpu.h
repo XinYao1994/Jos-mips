@@ -1,25 +1,3 @@
-/*
- *  arch/arm/include/asm/cpu.h
- *
- *  Copyright (C) 2004-2005 ARM Ltd.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
-#ifndef __ASM_ARM_CPU_H
-#define __ASM_ARM_CPU_H
-
-#include <linux/percpu.h>
-
-struct cpuinfo_arm {
-	struct cpu cpu;
-#ifdef CONFIG_SMP
-	struct task_struct *idle;
-	unsigned int loops_per_jiffy;
-#endif
-};
-
-DECLARE_PER_CPU(struct cpuinfo_arm, cpu_data);
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:a8b0cdad7e8e78046ab582f73309ef46aa094a26e09fde1711d2abc2ea8f14da
+size 524

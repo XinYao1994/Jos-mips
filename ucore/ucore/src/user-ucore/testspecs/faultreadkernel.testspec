@@ -1,7 +1,3 @@
-@program	/testbin/faultreadkernel
-
-  - 'kernel_execve: pid = [0-9]{1,2}, name = "/testbin/faultreadkernel".'
-  - 'trapframe at 0x.*'
-    'killed by kernel'
-!   'FAIL: T.T'
-! - 'user panic at .*'
+version https://git-lfs.github.com/spec/v1
+oid sha256:6d7296ad4051e3cdad78a75bfb2312d8eb1efb51d7e17fe9b9d234962bda95e4
+size 255

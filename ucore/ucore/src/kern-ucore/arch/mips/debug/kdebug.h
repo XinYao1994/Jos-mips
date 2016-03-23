@@ -1,11 +1,3 @@
-#ifndef __KERN_DEBUG_KDEBUG_H__
-#define __KERN_DEBUG_KDEBUG_H__
-
-#include <defs.h>
-#include <trap.h>
-
-void print_kerninfo(void);
-void print_stackframe(void);
-void print_debuginfo(uintptr_t eip);
-
-#endif /* !__KERN_DEBUG_KDEBUG_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:629b2ac24b4acc582f331fe22f50d435d4f4d48622120223912fd43f176d80bd
+size 234

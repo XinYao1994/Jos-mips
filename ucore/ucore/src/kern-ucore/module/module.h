@@ -1,25 +1,3 @@
-/*
- * =====================================================================================
- *
- *       Filename:  module.h
- *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  07/17/2012 09:01:04 PM
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Chen Yuheng (Chen Yuheng), chyh1990@163.com
- *   Organization:  Tsinghua Unv.
- *
- * =====================================================================================
- */
-
-#ifndef _MODULE_MODULE_H
-#define _MODULE_MODULE_H
-
-void dde_init();
-void dde_call_mapio_early();
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:c9197cbdc3969d0de46274ffbcf789ae4ad92f880fbc686d751aa4f7e15a794b
+size 570

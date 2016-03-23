@@ -1,14 +1,3 @@
-#include <arm.h>
-#include <intr.h>
-
-/* intr_enable - enable irq interrupt */
-void intr_enable(void)
-{
-	irq_flag_enable();
-}
-
-/* intr_disable - disable irq interrupt */
-void intr_disable(void)
-{
-	irq_flag_disable();
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d836033bbad12a4595ef985d38708f4fb0e5c20d7f6c9c44f784331ca4bcbfdc
+size 217

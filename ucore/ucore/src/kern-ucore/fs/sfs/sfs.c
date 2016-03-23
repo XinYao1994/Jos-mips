@@ -1,16 +1,3 @@
-#include <types.h>
-#include <sfs.h>
-#include <error.h>
-#include <assert.h>
-#include <vfs.h>
-
-void sfs_init(void)
-{
-	int ret;
-	if ((ret = register_filesystem("sfs", sfs_mount)) != 0) {
-		panic("failed: sfs: register_filesystem: %e.\n", ret);
-	}
-	if ((ret = sfs_mount("disk0")) != 0) {
-		panic("failed: sfs: sfs_mount: %e.\n", ret);
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:47b6e9bdb7a09c56cf12bc998f74de20e2fc8052744155528b2b2abfb3d48f52
+size 336

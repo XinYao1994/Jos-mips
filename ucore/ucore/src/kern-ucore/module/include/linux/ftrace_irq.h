@@ -1,17 +1,3 @@
-#ifndef _LINUX_FTRACE_IRQ_H
-#define _LINUX_FTRACE_IRQ_H
-
-#if defined(CONFIG_DYNAMIC_FTRACE) || defined(CONFIG_FUNCTION_GRAPH_TRACER)
-extern void ftrace_nmi_enter(void);
-extern void ftrace_nmi_exit(void);
-#else
-static inline void ftrace_nmi_enter(void)
-{
-}
-
-static inline void ftrace_nmi_exit(void)
-{
-}
-#endif
-
-#endif /* _LINUX_FTRACE_IRQ_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:c6c0bcd4236a734f0cf7d5f1e249962d8159bd70fbc80d6f73330f3f79073ba7
+size 343

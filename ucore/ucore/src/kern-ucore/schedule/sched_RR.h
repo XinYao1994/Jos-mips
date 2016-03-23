@@ -1,8 +1,3 @@
-#ifndef __KERN_SCHEDULE_SCHED_RR_H__
-#define __KERN_SCHEDULE_SCHED_RR_H__
-
-#include <sched.h>
-
-extern struct sched_class RR_sched_class;
-
-#endif /* !__KERN_SCHEDULE_SCHED_RR_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:4d2157b7c391ca73158151185d2b75cae03f8c676b6f852936b0198031668967
+size 181

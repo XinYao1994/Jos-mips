@@ -1,18 +1,3 @@
-/*
- * OpenFirmware SPI support routines
- * Copyright (C) 2008 Secret Lab Technologies Ltd.
- *
- * Support routines for deriving SPI device attachments from the device
- * tree.
- */
-
-#ifndef __LINUX_OF_SPI_H
-#define __LINUX_OF_SPI_H
-
-#include <linux/of.h>
-#include <linux/spi/spi.h>
-
-extern void of_register_spi_devices(struct spi_master *master,
-				    struct device_node *np);
-
-#endif /* __LINUX_OF_SPI */
+version https://git-lfs.github.com/spec/v1
+oid sha256:34395ed64b322218d9a1ef86000012f755dfe0ee2e75266d5149d0b3f8d82c38
+size 406

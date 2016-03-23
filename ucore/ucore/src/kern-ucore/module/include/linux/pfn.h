@@ -1,13 +1,3 @@
-#ifndef _LINUX_PFN_H_
-#define _LINUX_PFN_H_
-
-#ifndef __ASSEMBLY__
-#include <linux/types.h>
-#endif
-
-#define PFN_ALIGN(x)	(((unsigned long)(x) + (PAGE_SIZE - 1)) & PAGE_MASK)
-#define PFN_UP(x)	(((x) + PAGE_SIZE-1) >> PAGE_SHIFT)
-#define PFN_DOWN(x)	((x) >> PAGE_SHIFT)
-#define PFN_PHYS(x)	((phys_addr_t)(x) << PAGE_SHIFT)
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:503ca34aec9e6ff70f3342ccc3c8ae860205bf092467eafb0b33889744c4dce3
+size 328

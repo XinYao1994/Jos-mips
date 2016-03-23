@@ -1,24 +1,3 @@
-#include <ulib.h>
-#include <stdio.h>
-#include <string.h>
-#include <file.h>
-
-int main(void)
-{
-	int pid, ret;
-	if ((pid = fork()) == 0) {
-		do {
-			char c;
-			ret = read(0, &c, sizeof(c));
-			assert(ret == 1);
-		} while (1);
-	}
-	assert(pid > 0);
-
-	sleep(100);
-	kill(pid);
-
-	assert(waitpid(pid, &ret) == 0 && ret != 0);
-	cprintf("fread_test2 pass.\n");
-	return 0;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:face768f9ab215e73e43f55c6da7024d3ccf5bffc74eefe7c4454a75ce7b6cac
+size 363

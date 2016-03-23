@@ -1,14 +1,3 @@
-/*
- *  include/linux/anon_inodes.h
- *
- *  Copyright (C) 2007  Davide Libenzi <davidel@xmailserver.org>
- *
- */
-
-#ifndef _LINUX_ANON_INODES_H
-#define _LINUX_ANON_INODES_H
-
-int anon_inode_getfd(const char *name, const struct file_operations *fops,
-		     void *priv, int flags);
-
-#endif /* _LINUX_ANON_INODES_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:39f82c1141d3e229a0c6fa7167730a6390cb777fc17f050770c07be7f902c1f0
+size 311

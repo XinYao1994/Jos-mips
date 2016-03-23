@@ -1,25 +1,3 @@
-/*
- * This file contains the address info for various AM33XX modules.
- *
- * Copyright (C) 2011 Texas Instruments, Inc. - http://www.ti.com/
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation version 2.
- *
- * This program is distributed "as is" WITHOUT ANY WARRANTY of any
- * kind, whether express or implied; without even the implied warranty
- * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- */
-
-#ifndef __ASM_ARCH_AM33XX_H
-#define __ASM_ARCH_AM33XX_H
-
-#define L4_SLOW_AM33XX_BASE	0x48000000
-
-#define AM33XX_SCM_BASE		0x44E10000
-#define AM33XX_CTRL_BASE	AM33XX_SCM_BASE
-#define AM33XX_PRCM_BASE	0x44E00000
-
-#endif /* __ASM_ARCH_AM33XX_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:0c2fa1ae99dcb059464a324747efc5f45a7b597dc3603ca960db6e70af793ae0
+size 836

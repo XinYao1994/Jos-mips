@@ -1,36 +1,3 @@
-#include <console.h>
-#include <uart.h>
-
-/* serial_intr - try to feed input characters from serial port */
-void serial_intr(void)
-{
-	/*! TODO */
-}
-
-/* kbd_intr - try to feed input characters from keyboard */
-void kbd_intr(void)
-{
-	/*! TODO */
-}
-
-/* cons_init - initializes the console devices */
-void cons_init(void)
-{
-	uart_init();
-}
-
-/* cons_putc - print a single character @c to console devices */
-void cons_putc(int c)
-{
-	uart_putc(c);
-	asm("l.nop; l.nop;");
-}
-
-/* *
- * cons_getc - return the next input character from console,
- * or 0 if none waiting.
- * */
-int cons_getc(void)
-{
-	return uart_getc();
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b71eac2576a7a43fdedb5b80055e1b7fc4a9bb752d9c6d58b18265cabf89e05e
+size 607

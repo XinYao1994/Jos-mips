@@ -1,20 +1,3 @@
-#ifndef __ASM_SPINLOCK_TYPES_H
-#define __ASM_SPINLOCK_TYPES_H
-
-#ifndef __LINUX_SPINLOCK_TYPES_H
-#error "please don't include this file directly"
-#endif
-
-typedef struct {
-	volatile unsigned int lock;
-} raw_spinlock_t;
-
-#define __RAW_SPIN_LOCK_UNLOCKED	{ 0 }
-
-typedef struct {
-	volatile unsigned int lock;
-} raw_rwlock_t;
-
-#define __RAW_RW_LOCK_UNLOCKED		{ 0 }
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:e2f96d514e2359c569a7fb178b97f40a5033356c9f7ee9380180a0d24b95945b
+size 367

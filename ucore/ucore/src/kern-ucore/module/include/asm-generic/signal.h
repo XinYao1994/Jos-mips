@@ -1,28 +1,3 @@
-#ifndef __ASM_GENERIC_SIGNAL_H
-#define __ASM_GENERIC_SIGNAL_H
-
-#include <linux/compiler.h>
-
-#ifndef SIG_BLOCK
-#define SIG_BLOCK          0	/* for blocking signals */
-#endif
-#ifndef SIG_UNBLOCK
-#define SIG_UNBLOCK        1	/* for unblocking signals */
-#endif
-#ifndef SIG_SETMASK
-#define SIG_SETMASK        2	/* for setting the signal mask */
-#endif
-
-#ifndef __ASSEMBLY__
-typedef void __signalfn_t(int);
-typedef __signalfn_t __user *__sighandler_t;
-
-typedef void __restorefn_t(void);
-typedef __restorefn_t __user *__sigrestore_t;
-
-#define SIG_DFL	((__force __sighandler_t)0)	/* default signal handling */
-#define SIG_IGN	((__force __sighandler_t)1)	/* ignore signal */
-#define SIG_ERR	((__force __sighandler_t)-1)	/* error return from signal */
-#endif
-
-#endif /* __ASM_GENERIC_SIGNAL_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:0fa2d4fa383af15768f19243e2d24a6353ac194e1bc3dc32a2d35b44c42c14d1
+size 787

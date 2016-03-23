@@ -1,30 +1,3 @@
-# normal rules
-.*
-
-# do NOT ignore this file
-!.gitignore
-
-# build directories
-obj
-build-*
-
-# cscope files
-cscope.*
-ncscope.*
-
-# conf binaries
-package/config/conf
-package/config/mconf
-
-# userspace binaries & initial directory
-src/user-ucore/bin
-src/user-ucore/_initial
-
-# generated manuals
-*.man
-
-#ctags file
-tags
-
-#temp files
-*~
+version https://git-lfs.github.com/spec/v1
+oid sha256:68b01edf22a5a672c8675ee700253eee12e46615a92ebcc7a62de6b06127c49a
+size 294

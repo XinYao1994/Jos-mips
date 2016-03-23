@@ -1,11 +1,3 @@
-@program	/testbin/brktest
-
-  - 'kernel_execve: pid = [0-9]{1,2}, name = "/testbin/brktest".'
-    'I am going to eat out all the mem, MU HA HA!!.'
-    'I ate 5000 slots.'
-    'I ate 10000 slots.'
-    'I ate (at least) 40960000 byte memory.'
-    'I free all the memory.(0)'
-    'brktest pass.'
-    'all user-mode processes have quit.'
-    'init check memory pass.'
+version https://git-lfs.github.com/spec/v1
+oid sha256:4fccf88b6bf930a194ecd542564ba85b353c197233cf7bbbc62734c947357ca7
+size 363

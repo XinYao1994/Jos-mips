@@ -1,12 +1,3 @@
-/*
- * Arch specific extensions to struct device
- *
- * This file is released under the GPLv2
- */
-#ifndef _ASM_GENERIC_DEVICE_H
-#define _ASM_GENERIC_DEVICE_H
-
-struct dev_archdata {
-};
-
-#endif /* _ASM_GENERIC_DEVICE_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:10920439b132cd589091fa4e2e9afc38e409854f76b441a0ff25affa3401d41f
+size 218

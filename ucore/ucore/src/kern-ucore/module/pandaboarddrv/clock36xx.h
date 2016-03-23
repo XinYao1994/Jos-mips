@@ -1,13 +1,3 @@
-/*
- * OMAP36xx clock function prototypes and macros
- *
- * Copyright (C) 2010 Texas Instruments, Inc.
- * Copyright (C) 2010 Nokia Corporation
- */
-
-#ifndef __ARCH_ARM_MACH_OMAP2_CLOCK36XX_H
-#define __ARCH_ARM_MACH_OMAP2_CLOCK36XX_H
-
-extern const struct clkops clkops_omap36xx_pwrdn_with_hsdiv_wait_restore;
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:564f8e3a254dbc05ba6ab6e7fa33c2563fa91bb576d0876773680a06f2a036ba
+size 313

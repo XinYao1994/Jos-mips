@@ -1,21 +1,3 @@
-#ifndef __NET_NS_HASH_H__
-#define __NET_NS_HASH_H__
-
-#include <asm/cache.h>
-
-struct net;
-
-static inline unsigned net_hash_mix(struct net *net)
-{
-#ifdef CONFIG_NET_NS
-	/*
-	 * shift this right to eliminate bits, that are
-	 * always zeroed
-	 */
-
-	return (unsigned)(((unsigned long)net) >> L1_CACHE_SHIFT);
-#else
-	return 0;
-#endif
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:3ab0e6a3ef14efbc8bbd0b160913319736fd2492bac1dfc7f53408ef8a416821
+size 336

@@ -1,17 +1,3 @@
-#ifndef _ASM_GENERIC_BITOPS_MINIX_LE_H_
-#define _ASM_GENERIC_BITOPS_MINIX_LE_H_
-
-#include <asm-generic/bitops/le.h>
-
-#define minix_test_and_set_bit(nr,addr)	\
-	generic___test_and_set_le_bit((nr),(unsigned long *)(addr))
-#define minix_set_bit(nr,addr)		\
-	generic___set_le_bit((nr),(unsigned long *)(addr))
-#define minix_test_and_clear_bit(nr,addr) \
-	generic___test_and_clear_le_bit((nr),(unsigned long *)(addr))
-#define minix_test_bit(nr,addr)		\
-	generic_test_le_bit((nr),(unsigned long *)(addr))
-#define minix_find_first_zero_bit(addr,size) \
-	generic_find_first_zero_le_bit((unsigned long *)(addr),(size))
-
-#endif /* _ASM_GENERIC_BITOPS_MINIX_LE_H_ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:51ab1b03dfb9e9ac0c839b3a2186ba87c79bd9a80d2558fa37c5781cade3a17b
+size 656

@@ -1,35 +1,3 @@
-#include <dlfcn.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-#include "lkc.h"
-
-#define P(name,type,arg)	type (*name ## _p) arg
-#include "lkc_proto.h"
-#undef P
-
-void kconfig_load(void)
-{
-	void *handle;
-	char *error;
-
-	handle = dlopen("./libkconfig.so", RTLD_LAZY);
-	if (!handle) {
-		handle = dlopen("./scripts/kconfig/libkconfig.so", RTLD_LAZY);
-		if (!handle) {
-			fprintf(stderr, "%s\n", dlerror());
-			exit(1);
-		}
-	}
-
-#define P(name,type,arg)			\
-{						\
-	name ## _p = dlsym(handle, #name);	\
-        if ((error = dlerror()))  {		\
-                fprintf(stderr, "%s\n", error);	\
-		exit(1);			\
-	}					\
-}
-#include "lkc_proto.h"
-#undef P
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e3de70d9135dc59c585c18f1f068fd88796259dd60380ccd1caca87cbe0aa0a2
+size 644

@@ -1,9 +1,3 @@
-#ifndef __NIOS2_DRIVER_RF212_H__
-#define __NIOS2_DRIVER_RF212_H__
-
-void rf212_init();
-void rf212_reset();
-void rf212_send(uint8_t len, uint8_t * data);
-void rf212_reg(uint8_t reg, uint8_t value);
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:ae9dc2cee45aaab5655f0154675fccf8429caa39792bcb08e528c3e1d1f044ab
+size 204

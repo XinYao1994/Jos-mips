@@ -1,19 +1,3 @@
-#include <ulib.h>
-#include <stdio.h>
-#include <dir.h>
-
-#define printf(...)                     fprintf(1, __VA_ARGS__)
-
-void usage(void)
-{
-	printf("usage: link file1 file2\n");
-}
-
-int main(int argc, char **argv)
-{
-	if (argc != 3) {
-		usage();
-		return -1;
-	}
-	return link(argv[1], argv[2]);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:714b0bbff4149c4734a39000d21a71cd0cff42f0ece8322e49f91d075e02ff74
+size 293

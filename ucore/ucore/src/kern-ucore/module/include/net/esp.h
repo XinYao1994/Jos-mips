@@ -1,25 +1,3 @@
-#ifndef _NET_ESP_H
-#define _NET_ESP_H
-
-#include <linux/skbuff.h>
-
-struct crypto_aead;
-
-struct esp_data {
-	/* 0..255 */
-	int padlen;
-
-	/* Confidentiality & Integrity */
-	struct crypto_aead *aead;
-};
-
-extern void *pskb_put(struct sk_buff *skb, struct sk_buff *tail, int len);
-
-struct ip_esp_hdr;
-
-static inline struct ip_esp_hdr *ip_esp_hdr(const struct sk_buff *skb)
-{
-	return (struct ip_esp_hdr *)skb_transport_header(skb);
-}
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:16b6882a277bec9e2262eb67de9627ec03f870ab0441fc9f2370702bc48b72fe
+size 434

@@ -1,27 +1,3 @@
-#include <types.h>
-#include <stdarg.h>
-#include <stdio.h>
-#include <ulib.h>
-#include <error.h>
-
-void __panic(const char *file, int line, const char *fmt, ...)
-{
-	// print the 'message'
-	va_list ap;
-	va_start(ap, fmt);
-	cprintf("user panic at %s:%d:\n    ", file, line);
-	vcprintf(fmt, ap);
-	cprintf("\n");
-	va_end(ap);
-	exit(-E_PANIC);
-}
-
-void __warn(const char *file, int line, const char *fmt, ...)
-{
-	va_list ap;
-	va_start(ap, fmt);
-	cprintf("user warning at %s:%d:\n    ", file, line);
-	vcprintf(fmt, ap);
-	cprintf("\n");
-	va_end(ap);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a8d7a84bf4031e9f5c4d8cb6bf9ace4079ff40d73e9b17ea7cc18b76e0c67455
+size 541

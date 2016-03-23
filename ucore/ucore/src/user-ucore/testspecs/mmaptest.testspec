@@ -1,12 +1,3 @@
-@program	/testbin/mmaptest
-
-  - 'kernel_execve: pid = [0-9]{1,2}, name = "/testbin/mmaptest".'
-    'mmap step1 ok.'
-    'munmap step1 ok.'
-    'mmap step2 ok.'
-    'mmap step3 ok.'
-    'mumap step2 ok.'
-    'mmaptest pass.'
-    'all user-mode processes have quit.'
-    'init check memory pass.'
-! - 'user panic at .*'
+version https://git-lfs.github.com/spec/v1
+oid sha256:1dc8841579aa4a83aa464ca95ae6e3bb1b4f2760782f03ec0e511719034866c0
+size 318

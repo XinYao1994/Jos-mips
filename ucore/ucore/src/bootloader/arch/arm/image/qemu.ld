@@ -1,36 +1,3 @@
-OUTPUT_ARCH(arm)
-ENTRY(_start)
-
-SECTIONS
-{
-	. = 0x00000000;
-	.text : 
-	{
-		*(.startup)
-		*(.text) 
-		*(.rodata*)
-	}
-
-	. = ALIGN(32);
-
-	.data : 
-	{
-		*(.data)
-	}
-	
-	. = ALIGN(32);
-	
-	__bss_start__ = .;
-	.bss : 
-	{
-		*(.bss)
-	}
-	__bss_end__ = .;
-
-  . = 0x1000;
-
-  .kern :
-  {
-    *(.piggydata)
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8b71b44a3c92c503799e12bff3c6ace07cda177e63da32798d49caba5e94cf67
+size 298

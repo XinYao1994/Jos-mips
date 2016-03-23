@@ -1,26 +1,3 @@
-#include <ulib.h>
-#include <stdio.h>
-#include <dir.h>
-
-#define printf(...)                     fprintf(1, __VA_ARGS__)
-
-void usage(void)
-{
-	printf("usage: unlink dir [...]\n");
-}
-
-int main(int argc, char **argv)
-{
-	if (argc == 1) {
-		usage();
-		return -1;
-	} else {
-		int i, ret;
-		for (i = 1; i < argc; i++) {
-			if ((ret = unlink(argv[i])) != 0) {
-				return ret;
-			}
-		}
-	}
-	return 0;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5b0201d2388e22de2f61a36afc33c2c48dea5e00de040bcd603fface016fa412
+size 391

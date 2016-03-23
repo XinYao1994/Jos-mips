@@ -1,12 +1,3 @@
-#ifndef __USER_LIBS_MOD_H__
-#define __USER_LIBS_MOD_H__
-
-#ifndef __user
-#define __user
-#endif
-
-int init_module(void __user * umod, unsigned long len,
-		const char __user * uargs);
-int cleanup_module(const char __user * name);
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:6385f8730b75179c8c66cdae8919d291b56b786d96efb3bb06f3d3698f18f664
+size 234

@@ -1,18 +1,3 @@
-#ifndef _NET_INET_DATALINK_H_
-#define _NET_INET_DATALINK_H_
-
-struct datalink_proto {
-	unsigned char type[8];
-
-	struct llc_sap *sap;
-
-	unsigned short header_length;
-
-	int (*rcvfunc) (struct sk_buff *, struct net_device *,
-			struct packet_type *, struct net_device *);
-	int (*request) (struct datalink_proto *, struct sk_buff *,
-			unsigned char *);
-	struct list_head node;
-};
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:fcc86357455446f537b352818d3d3e04cc9c90a4592d38c9cf945213e0386e64
+size 384

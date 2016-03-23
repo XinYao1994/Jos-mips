@@ -1,10 +1,3 @@
-#include <linux/module.h>
-#include <linux/compiler.h>
-
-struct module __this_module
-    __attribute__ ((section(".gnu.linkonce.this_module"))) = {
-	.name = "hello",.init = init_module,
-#ifdef CONFIG_MODULE_UNLOAD
-	    .exit = cleanup_module,
-#endif
-.arch = MODULE_ARCH_INIT,};
+version https://git-lfs.github.com/spec/v1
+oid sha256:c5e002bb3c0a87fc384d00d75074ccb2b2fc59a1bfb089a6690bb1835ab21947
+size 276

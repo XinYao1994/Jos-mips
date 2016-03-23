@@ -1,15 +1,3 @@
-#ifndef _ASM_GENERIC_BITOPS_FIND_H_
-#define _ASM_GENERIC_BITOPS_FIND_H_
-
-#ifndef CONFIG_GENERIC_FIND_NEXT_BIT
-extern unsigned long find_next_bit(const unsigned long *addr, unsigned long
-				   size, unsigned long offset);
-
-extern unsigned long find_next_zero_bit(const unsigned long *addr, unsigned
-					long size, unsigned long offset);
-#endif
-
-#define find_first_bit(addr, size) find_next_bit((addr), (size), 0)
-#define find_first_zero_bit(addr, size) find_next_zero_bit((addr), (size), 0)
-
-#endif /*_ASM_GENERIC_BITOPS_FIND_H_ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:fa593c808fd67a0c109e9766059b5d85e85d84fc7aa0c39df3c34a2f5c25cb94
+size 533

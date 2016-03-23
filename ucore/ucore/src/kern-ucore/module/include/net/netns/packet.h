@@ -1,15 +1,3 @@
-/*
- * Packet network namespace
- */
-#ifndef __NETNS_PACKET_H__
-#define __NETNS_PACKET_H__
-
-#include <linux/list.h>
-#include <linux/spinlock.h>
-
-struct netns_packet {
-	rwlock_t sklist_lock;
-	struct hlist_head sklist;
-};
-
-#endif /* __NETNS_PACKET_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:2a5ddf5bdd791df6620c05b5867dee9c4d533b979d4057ce6de1f7df3b39a778
+size 251

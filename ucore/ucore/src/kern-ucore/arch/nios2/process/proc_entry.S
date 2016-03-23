@@ -1,11 +1,3 @@
-.text
-.globl kernel_thread_entry
-kernel_thread_entry:        # void kernel_thread(void)
-
-#    pushl %edx              # push arg
-#    call *%ebx              # call fn
-    callr r3
-
-    mov r4, r2              # save the return value of fn(arg)
-    call do_exit            # call do_exit to terminate current thread
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:93c0b1908925dda6172895569cd7d1927e95c89b3b8a3569645b82c0665fb484
+size 317

@@ -1,16 +1,3 @@
-/* platform data for the PCA9539 16-bit I/O expander driver */
-
-struct pca953x_platform_data {
-	/* number of the first GPIO */
-	unsigned gpio_base;
-
-	/* initial polarity inversion setting */
-	uint16_t invert;
-
-	void *context;		/* param to setup/teardown */
-
-	int (*setup) (struct i2c_client * client,
-		      unsigned gpio, unsigned ngpio, void *context);
-	int (*teardown) (struct i2c_client * client,
-			 unsigned gpio, unsigned ngpio, void *context);
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:88a909cb04b9b99807add1d432ef46b59ccacbc570c517a94b3b588e7cb8886c
+size 456

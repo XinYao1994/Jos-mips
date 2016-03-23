@@ -1,11 +1,3 @@
-/*
- * Defines for rx51 boards
- */
-
-#ifndef _OMAP_BOARD_RX51_H
-#define _OMAP_BOARD_RX51_H
-
-extern void __init rx51_peripherals_init(void);
-extern void __init rx51_video_mem_init(void);
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:79902ccc1a571ca5aae5ac5f9c7b76877ab5409a9c858c0ca519a024e056852f
+size 192

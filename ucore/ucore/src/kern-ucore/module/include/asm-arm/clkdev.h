@@ -1,30 +1,3 @@
-/*
- *  arch/arm/include/asm/clkdev.h
- *
- *  Copyright (C) 2008 Russell King.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Helper for the clk API to assist looking up a struct clk.
- */
-#ifndef __ASM_CLKDEV_H
-#define __ASM_CLKDEV_H
-
-struct clk;
-
-struct clk_lookup {
-	struct list_head node;
-	const char *dev_id;
-	const char *con_id;
-	struct clk *clk;
-};
-
-struct clk_lookup *clkdev_alloc(struct clk *clk, const char *con_id,
-				const char *dev_fmt, ...);
-
-void clkdev_add(struct clk_lookup *cl);
-void clkdev_drop(struct clk_lookup *cl);
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:eca8adb97729f1316c6e2bb05cb37970afa1ea53d6d324178c2d64d35368762d
+size 693

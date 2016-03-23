@@ -1,15 +1,3 @@
-		.text
-		.global _start
-
-		// This function should look like this in C:
-		//     void _start (int argc, char* argv[])
-_start:		
-		l.bnf	umain
-		l.nop
-		l.nop
-
-		// should never reach here
-1:
-		l.j 	1b
-		l.nop
-		l.nop
+version https://git-lfs.github.com/spec/v1
+oid sha256:6ef5f90ee1efb782d24257095eb159af575099240efde831dc319c171f59ad22
+size 217

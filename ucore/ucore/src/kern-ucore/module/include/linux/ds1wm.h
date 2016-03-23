@@ -1,12 +1,3 @@
-/* platform data for the DS1WM driver */
-
-struct ds1wm_platform_data {
-	int bus_shift;		/* number of shifts needed to calculate the
-				 * offset between DS1WM registers;
-				 * e.g. on h5xxx and h2200 this is 2
-				 * (registers aligned to 4-byte boundaries),
-				 * while on hx4700 this is 1 */
-	int active_high;
-	void (*enable) (struct platform_device * pdev);
-	void (*disable) (struct platform_device * pdev);
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:8ac7080d8d83c3872e72110369d5b98a0d284da956f9e994af31deccc8f007f4
+size 417

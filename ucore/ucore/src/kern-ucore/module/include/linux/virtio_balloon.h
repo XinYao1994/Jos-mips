@@ -1,22 +1,3 @@
-#ifndef _LINUX_VIRTIO_BALLOON_H
-#define _LINUX_VIRTIO_BALLOON_H
-/* This header is BSD licensed so anyone can use the definitions to implement
- * compatible drivers/servers. */
-#include <linux/virtio_config.h>
-
-/* The ID for virtio_balloon */
-#define VIRTIO_ID_BALLOON	5
-
-/* The feature bitmap for virtio balloon */
-#define VIRTIO_BALLOON_F_MUST_TELL_HOST	0	/* Tell before reclaiming pages */
-
-/* Size of a PFN in the balloon interface. */
-#define VIRTIO_BALLOON_PFN_SHIFT 12
-
-struct virtio_balloon_config {
-	/* Number of pages host wants Guest to give up. */
-	__le32 num_pages;
-	/* Number of pages we've actually got in balloon. */
-	__le32 actual;
-};
-#endif /* _LINUX_VIRTIO_BALLOON_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:0815732ba93917f9f106e35378038311bd4ca35d740b6ef2efc961babfa33229
+size 688

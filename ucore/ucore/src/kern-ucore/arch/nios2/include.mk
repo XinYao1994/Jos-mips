@@ -1,5 +1,3 @@
-ARCH_INLUCDES:=debug mm driver init libs sync process glue-ucore glue-ucore/libs syscall
-ARCH_CFLAGS := -EL -mhw-div -mhw-mul -mno-hw-mulx -DSYSTEM_BUS_WIDTH=32 \
-               -pipe -DALT_NO_INSTRUCTION_EMULATION -Wno-traditional -G 0 \
-               -fomit-frame-pointer -Wall -O2
-ARCH_LDFLAGS := -m    nios2elf
+version https://git-lfs.github.com/spec/v1
+oid sha256:d2db70f760525ad99cd6032e3030c42c1f3abbf685a26169eb99026392f33501
+size 316

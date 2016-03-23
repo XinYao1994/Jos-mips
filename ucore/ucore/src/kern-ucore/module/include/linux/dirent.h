@@ -1,12 +1,3 @@
-#ifndef _LINUX_DIRENT_H
-#define _LINUX_DIRENT_H
-
-struct linux_dirent64 {
-	u64 d_ino;
-	s64 d_off;
-	unsigned short d_reclen;
-	unsigned char d_type;
-	char d_name[0];
-};
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:e4b884c86f012787c5159e6323f0b937b200c891ac9e0ff59d81d29b6ce11b96
+size 174

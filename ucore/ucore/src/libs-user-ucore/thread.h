@@ -1,15 +1,3 @@
-#ifndef __USER_LIBS_THREAD_H__
-#define __USER_LIBS_THREAD_H__
-
-typedef struct {
-	int pid;
-	void *stack;
-} thread_t;
-
-#define THREAD_STACKSIZE        (4096 * 10)
-
-int thread(int (*fn) (void *), void *arg, thread_t * tidp);
-int thread_wait(thread_t * tidp, int *exit_code);
-int thread_kill(thread_t * tidp);
-
-#endif /* !__USER_LIBS_THREAD_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:83c46680cecec845987ce2edc1f21f2d555b488601e1b5a14b4bfbbbbf089b97
+size 344

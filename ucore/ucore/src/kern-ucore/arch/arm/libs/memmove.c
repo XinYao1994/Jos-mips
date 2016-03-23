@@ -1,21 +1,3 @@
-#include <arm.h>
-
-void *__memmove(void *dst, const void *src, size_t n)
-{
-	if (dst < src) {
-		return __memcpy(dst, src, n);
-	}
-	const char *s = src;
-	char *d = dst;
-	if (s < d && s + n > d) {
-		s += n, d += n;
-		while (n-- > 0) {
-			*--d = *--s;
-		}
-	} else {
-		while (n-- > 0) {
-			*d++ = *s++;
-		}
-	}
-	return dst;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4c76a96cf65f4aa3150e95fa89c5ee21ce3d10b10d7b8fc5302eda8b7372b3e7
+size 318

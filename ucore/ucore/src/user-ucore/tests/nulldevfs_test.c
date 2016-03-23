@@ -1,24 +1,3 @@
-#include <stdio.h>
-#include <ulib.h>
-#include <string.h>
-#include <file.h>
-#include <unistd.h>
-
-int main(void)
-{
-	int fd = 0, ret;
-	char buf[5];
-	buf[0] = buf[1] = buf[2] = buf[3] = 'a';
-	buf[4] = '\n';
-	fd = open("null:", O_RDWR);
-	cprintf("NULL fd is %d\n", fd);
-	ret = write(fd, "hello", 5);
-	cprintf("write %d to NULL\n", ret);
-	ret = read(fd, buf, 5);
-	cprintf("read %d from NULL, buf is %s\n", ret, buf);
-
-	fprintf(1, "Hello world!!.\n");
-	fprintf(1, "I am process %d.\n", getpid());
-	fprintf(1, "hello2 pass.\n");
-	return 0;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:287a295aa09d32111e0d3862a1e17d3a472fb35765bc1cd140adf4638047adce
+size 534

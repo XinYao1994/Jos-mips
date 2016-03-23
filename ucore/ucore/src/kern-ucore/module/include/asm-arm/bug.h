@@ -1,23 +1,3 @@
-#ifndef _ASMARM_BUG_H
-#define _ASMARM_BUG_H
-
-#ifdef CONFIG_BUG
-#ifdef CONFIG_DEBUG_BUGVERBOSE
-extern void __bug(const char *file, int line) __attribute__ ((noreturn));
-
-/* give file/line information */
-#define BUG()		__bug(__FILE__, __LINE__)
-
-#else
-
-/* this just causes an oops */
-#define BUG()		do { *(int *)0 = 0; } while (1)
-
-#endif
-
-#define HAVE_ARCH_BUG
-#endif
-
-#include <asm-generic/bug.h>
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:d9e4a9a04a9aba3df2922a36d6c7ee6b80130d7d76a47a0b061b3012419069a9
+size 405

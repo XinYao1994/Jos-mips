@@ -1,19 +1,3 @@
-#ifndef _ASM_ARM_UNALIGNED_H
-#define _ASM_ARM_UNALIGNED_H
-
-#include <linux/unaligned/le_byteshift.h>
-#include <linux/unaligned/be_byteshift.h>
-#include <linux/unaligned/generic.h>
-
-/*
- * Select endianness
- */
-#ifndef __ARMEB__
-#define get_unaligned	__get_unaligned_le
-#define put_unaligned	__put_unaligned_le
-#else
-#define get_unaligned	__get_unaligned_be
-#define put_unaligned	__put_unaligned_be
-#endif
-
-#endif /* _ASM_ARM_UNALIGNED_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:f3d11e297e52acabb75c0a6d01f14230f6b335c7a289ec3b17c90f5265427224
+size 439

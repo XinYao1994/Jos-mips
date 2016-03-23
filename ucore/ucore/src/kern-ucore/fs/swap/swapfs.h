@@ -1,14 +1,3 @@
-#ifndef __KERN_FS_SWAP_SWAPFS_H__
-#define __KERN_FS_SWAP_SWAPFS_H__
-
-#include <memlayout.h>
-#include <swap.h>
-
-#ifdef UCONFIG_SWAP
-void swapfs_init(void);
-int swapfs_read(swap_entry_t entry, struct Page *page);
-int swapfs_write(swap_entry_t entry, struct Page *page);
-
-#endif
-
-#endif /* !__KERN_FS_SWAP_SWAPFS_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d917dac5b2b5073ecf45c4e3eeac4345cdd23e634393d71d1f2d2c2c56d977b
+size 317

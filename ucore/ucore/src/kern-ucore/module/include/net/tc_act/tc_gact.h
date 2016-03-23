@@ -1,17 +1,3 @@
-#ifndef __NET_TC_GACT_H
-#define __NET_TC_GACT_H
-
-#include <net/act_api.h>
-
-struct tcf_gact {
-	struct tcf_common common;
-#ifdef CONFIG_GACT_PROB
-	u16 tcfg_ptype;
-	u16 tcfg_pval;
-	int tcfg_paction;
-#endif
-};
-#define to_gact(pc) \
-	container_of(pc, struct tcf_gact, common)
-
-#endif /* __NET_TC_GACT_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:822f9a61bb36b8a2201cbb72cda81c1f3592894189de6fbacf980be596d50958
+size 301

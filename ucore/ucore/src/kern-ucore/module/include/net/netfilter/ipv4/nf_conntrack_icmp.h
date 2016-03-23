@@ -1,10 +1,3 @@
-#ifndef _NF_CONNTRACK_ICMP_H
-#define _NF_CONNTRACK_ICMP_H
-/* ICMP tracking. */
-#include <asm/atomic.h>
-
-struct ip_ct_icmp {
-	/* Optimization: when number in == number out, forget immediately. */
-	atomic_t count;
-};
-#endif /* _NF_CONNTRACK_ICMP_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:e6ddbae392f78e889e0def5c02f033794c16a55e3eba776d7c4679293c76da9d
+size 249

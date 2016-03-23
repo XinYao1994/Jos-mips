@@ -1,16 +1,3 @@
-#ifndef _LINUX_BITREV_H
-#define _LINUX_BITREV_H
-
-#include <linux/types.h>
-
-extern u8 const byte_rev_table[256];
-
-static inline u8 bitrev8(u8 byte)
-{
-	return byte_rev_table[byte];
-}
-
-extern u16 bitrev16(u16 in);
-extern u32 bitrev32(u32 in);
-
-#endif /* _LINUX_BITREV_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:c079bdda62c213e485ec76c359a949cf4429011fea9388ad9594fab258a1b126
+size 270

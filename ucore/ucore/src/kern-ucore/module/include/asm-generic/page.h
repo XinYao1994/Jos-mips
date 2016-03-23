@@ -1,24 +1,3 @@
-#ifndef _ASM_GENERIC_PAGE_H
-#define _ASM_GENERIC_PAGE_H
-
-#ifndef __ASSEMBLY__
-
-#include <linux/compiler.h>
-
-/* Pure 2^n version of get_order */
-static __inline__ __attribute_const__ int get_order(unsigned long size)
-{
-	int order;
-
-	size = (size - 1) >> (PAGE_SHIFT - 1);
-	order = -1;
-	do {
-		size >>= 1;
-		order++;
-	} while (size);
-	return order;
-}
-
-#endif /* __ASSEMBLY__ */
-
-#endif /* _ASM_GENERIC_PAGE_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:0b7166386eb1332f7c485f105690083d386c296e9a8a8645290dd95950bde5e5
+size 410

@@ -1,12 +1,3 @@
-#ifndef _KER_NFNETLINK_LOG_H
-#define _KER_NFNETLINK_LOG_H
-
-void
-nfulnl_log_packet(u_int8_t pf,
-		  unsigned int hooknum,
-		  const struct sk_buff *skb,
-		  const struct net_device *in,
-		  const struct net_device *out,
-		  const struct nf_loginfo *li_user, const char *prefix);
-
-#endif /* _KER_NFNETLINK_LOG_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:06074cc9f059aae36ed462b6437ffff9fa8fdcea3c3bf919c557636d670dbcc9
+size 313

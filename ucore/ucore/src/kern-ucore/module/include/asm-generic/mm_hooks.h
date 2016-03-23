@@ -1,17 +1,3 @@
-/*
- * Define generic no-op hooks for arch_dup_mmap and arch_exit_mmap, to
- * be included in asm-FOO/mmu_context.h for any arch FOO which doesn't
- * need to hook these.
- */
-#ifndef _ASM_GENERIC_MM_HOOKS_H
-#define _ASM_GENERIC_MM_HOOKS_H
-
-static inline void arch_dup_mmap(struct mm_struct *oldmm, struct mm_struct *mm)
-{
-}
-
-static inline void arch_exit_mmap(struct mm_struct *mm)
-{
-}
-
-#endif /* _ASM_GENERIC_MM_HOOKS_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:f8ae14ff1507e25403d33e9fbb9182be3e3aad1e2193e96cef5a8b70734b4bc4
+size 420

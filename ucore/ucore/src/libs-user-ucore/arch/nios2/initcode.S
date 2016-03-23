@@ -1,20 +1,3 @@
-.text
-.globl _start
-_start:
-    # set ebp for backtrace
-    # movl $0x0, %ebp
-
-    # move down the esp register
-    # since it may cause page fault in backtrace
-    # subl $0x20, %esp
-    addi  sp, sp, -0x20
-    
-    #movhi gp, %hi(_gp)
-    #ori gp, gp, %lo(_gp)
-
-
-    # call user-program function
-    call umain
-initcode_end:
-    br initcode_end
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:e14263d941275b903bbd125ce9570e3be13a590f1788b4568f37078426f737f7
+size 348

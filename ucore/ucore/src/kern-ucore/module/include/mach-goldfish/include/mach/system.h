@@ -1,30 +1,3 @@
-/* include/asm-arm/arch-goldfish/system.h
-**
-** Copyright (C) 2007 Google, Inc.
-**
-** This software is licensed under the terms of the GNU General Public
-** License version 2, as published by the Free Software Foundation, and
-** may be copied, distributed, and modified under those terms.
-**
-** This program is distributed in the hope that it will be useful,
-** but WITHOUT ANY WARRANTY; without even the implied warranty of
-** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-** GNU General Public License for more details.
-**
-*/
-
-#ifndef __ASM_ARCH_SYSTEM_H
-#define __ASM_ARCH_SYSTEM_H
-
-#include <asm/proc-fns.h>
-
-static inline void arch_idle(void)
-{
-	cpu_do_idle();
-}
-
-static inline void arch_reset(char mode)
-{
-}
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:2ecc44491e91f7084eebde0bd03e0b518399611fe7ae69eccf47a2a59a9c1a60
+size 738

@@ -1,20 +1,3 @@
-#ifndef __NIOS2_KERN_DRIVER_TIMER_H__
-#define __NIOS2_KERN_DRIVER_TIMER_H__
-
-void nios2_timer_init(void);
-
-void nios2_timer_usleep(int usec);
-
-struct np_timer {		//not used...
-	int np_timerstatus;	// read only, 2 bits (any write to clear TO)
-	int np_timercontrol;	// write/readable, 4 bits
-	int np_timerperiodl;	// write/readable, 16 bits
-	int np_timerperiodh;	// write/readable, 16 bits
-	int np_timersnapl;	// read only, 16 bits
-	int np_timersnaph;	// read only, 16 bits
-};
-
-extern struct np_timer *na_timer;
-extern struct np_timer *na_timer1;
-
-#endif /* !__NIOS2_KERN_DRIVER_TIMER_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:ffc41b456e8843366e4c21e74fb7e4d1c35b4eb5b726cbdce2403ce9b1158b14
+size 590

@@ -1,9 +1,3 @@
-__NR_rename, __NR_mkdir, __NR_rmdir,
-#ifdef __NR_creat
-    __NR_creat,
-#endif
-    __NR_link, __NR_unlink, __NR_symlink, __NR_mknod,
-#ifdef __NR_mkdirat
-    __NR_mkdirat,
-    __NR_mknodat, __NR_unlinkat, __NR_renameat, __NR_linkat, __NR_symlinkat,
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:4462fbb6ea8c3fb08d7eeb663729c7085f91ca434fca9e16896cfd6dc892a65a
+size 254

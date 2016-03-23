@@ -1,22 +1,3 @@
-#ifndef _ASM_GENERIC_BITOPS_EXT2_ATOMIC_H_
-#define _ASM_GENERIC_BITOPS_EXT2_ATOMIC_H_
-
-#define ext2_set_bit_atomic(lock, nr, addr)		\
-	({						\
-		int ret;				\
-		spin_lock(lock);			\
-		ret = ext2_set_bit((nr), (unsigned long *)(addr)); \
-		spin_unlock(lock);			\
-		ret;					\
-	})
-
-#define ext2_clear_bit_atomic(lock, nr, addr)		\
-	({						\
-		int ret;				\
-		spin_lock(lock);			\
-		ret = ext2_clear_bit((nr), (unsigned long *)(addr)); \
-		spin_unlock(lock);			\
-		ret;					\
-	})
-
-#endif /* _ASM_GENERIC_BITOPS_EXT2_ATOMIC_H_ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:4f5c338820a32ff7ac0f0e771c402fa0f064abe51a57cc825b3727b3abadafeb
+size 529

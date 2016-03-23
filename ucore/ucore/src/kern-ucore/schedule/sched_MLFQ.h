@@ -1,8 +1,3 @@
-#ifndef __KERN_SCHEDULE_SCHED_MLFQ_H__
-#define __KERN_SCHEDULE_SCHED_MLFQ_H__
-
-#include <sched.h>
-
-extern struct sched_class MLFQ_sched_class;
-
-#endif /* !__KERN_SCHEDULE_SCHED_MLFQ_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:13252b9c42eb11892daf6fa376ea714e5bd21e5245d966bfd68001b8548af7ae
+size 189

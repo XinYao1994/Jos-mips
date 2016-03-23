@@ -1,10 +1,3 @@
-#ifndef __USER_LIBS_MALLOC_H__
-#define __USER_LIBS_MALLOC_H__
-
-#include <types.h>
-
-void *malloc(size_t size);
-void *shmem_malloc(size_t size);
-void free(void *ap);
-
-#endif /* !__USER_LIBS_MALLOC_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:f3bd25d483f3e448ef181e477b38d3b82158ba32fa25f9ee66d3c9e1670bf163
+size 202

@@ -1,4 +1,3 @@
-ARCH_CFLAGS := -DARCH_X86 -m32
-ARCH_LDFLAGS := -melf_i386
-ARCH_OBJS := clone.o syscall.o
-ARCH_INITCODE_OBJ := initcode.o
+version https://git-lfs.github.com/spec/v1
+oid sha256:9d004790b34df68cb0266b731c9a688f60b8178abc459687850ee454d930d4ee
+size 121

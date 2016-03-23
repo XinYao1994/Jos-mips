@@ -1,16 +1,3 @@
-#ifndef __NET_TC_MIR_H
-#define __NET_TC_MIR_H
-
-#include <net/act_api.h>
-
-struct tcf_mirred {
-	struct tcf_common common;
-	int tcfm_eaction;
-	int tcfm_ifindex;
-	int tcfm_ok_push;
-	struct net_device *tcfm_dev;
-};
-#define to_mirred(pc) \
-	container_of(pc, struct tcf_mirred, common)
-
-#endif /* __NET_TC_MIR_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:b34ebb8a53402974a9cc26ebc2cd6d031376aafcced41034d69bca4c150fb96e
+size 308

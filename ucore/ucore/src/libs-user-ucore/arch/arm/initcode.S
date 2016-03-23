@@ -1,16 +1,3 @@
-		.text
-		.global _start
-
-		// This function should look like this in C:
-		//     void _start (int argc, char* argv[])
-_start:		
-    ldr r0, [sp]
-    #ldr r1, [sp, #+4]
-    add r1, sp, #4
-		bl	umain
-		nop
-
-		// should never reach here
-_dead:
-		b _dead
-		nop
+version https://git-lfs.github.com/spec/v1
+oid sha256:0a11c93eeb876b022be5e5b14f01654b29159ea3048442f582c79f789bb3737b
+size 258

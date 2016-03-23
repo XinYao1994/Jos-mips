@@ -1,36 +1,3 @@
-#ifndef __LIBS_NIOS2_H__
-#define __LIBS_NIOS2_H__
-
-//#include <defs.h>
-#include <stdio.h>
-#include <tlb.h>
-#include <pmm.h>
-#include <kio.h>
-
-#define do_div(n, base) ({                                          \
-            unsigned long __mod;                                    \
-            __mod = (n) % (base);                                   \
-            (n) /= (base);                                          \
-            __mod;                                                  \
-        })
-
-uintptr_t nios2_cr3;
-#define NIOS2_PGDIR ((pde_t *)nios2_cr3)
-
-static inline void lcr3(uintptr_t cr3) __attribute__ ((always_inline));
-static inline uintptr_t rcr3(void) __attribute__ ((always_inline));
-
-static inline void lcr3(uintptr_t cr3)
-{
-	//kernel?
-	tlb_init();
-	//kprintf("lcr3: cr3=0x%x KADDR(cr3)=0x%x\n", cr3, KADDR(cr3));
-	nios2_cr3 = (uintptr_t) KADDR(cr3);
-}
-
-static inline uintptr_t rcr3(void)
-{
-	return nios2_cr3;
-}
-
-#endif /* !__LIBS_NIOS2_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:bf82f86dd4a6ac08794a9b7d1ffcd517850ce7e4d754bcab3f9ab09ec54a1684
+size 968

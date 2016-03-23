@@ -1,11 +1,3 @@
-SRCFILES	+= $(filter %.c %.S, $(wildcard arch/${ARCH}/*))
-T_CC_ALL_FLAGS	= -Iarch/${ARCH} -I../glue-kern/arch/${ARCH}
-
-include ${T_BASE}/mk/compbl.mk
-include ${T_BASE}/mk/template.mk
-
-all: ${T_OBJ}/bootloader
-
-${T_OBJ}/bootloader: ${OBJFILES}
-	@echo LD $@
-	${V}${CC} -Tarch/${ARCH}/bootloader.ld -o$@ ${OBJFILES}
+version https://git-lfs.github.com/spec/v1
+oid sha256:07d052f0bb41e574ecab71dd635e72eeb88d35df2eb4cfe3d0109930e7bd35f7
+size 313

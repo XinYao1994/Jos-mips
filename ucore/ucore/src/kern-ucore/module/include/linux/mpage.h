@@ -1,34 +1,3 @@
-/*
- * include/linux/mpage.h
- *
- * Contains declarations related to preparing and submitting BIOS which contain
- * multiple pagecache pages.
- */
-
-/*
- * (And no, it doesn't do the #ifdef __MPAGE_H thing, and it doesn't do
- * nested includes.  Get it right in the .c file).
- */
-#ifdef CONFIG_BLOCK
-
-struct mpage_data {
-	struct bio *bio;
-	sector_t last_block_in_bio;
-	get_block_t *get_block;
-	unsigned use_writepage;
-};
-
-struct writeback_control;
-
-struct bio *mpage_bio_submit(int rw, struct bio *bio);
-int mpage_readpages(struct address_space *mapping, struct list_head *pages,
-		    unsigned nr_pages, get_block_t get_block);
-int mpage_readpage(struct page *page, get_block_t get_block);
-int __mpage_writepage(struct page *page, struct writeback_control *wbc,
-		      void *data);
-int mpage_writepages(struct address_space *mapping,
-		     struct writeback_control *wbc, get_block_t get_block);
-int mpage_writepage(struct page *page, get_block_t * get_block,
-		    struct writeback_control *wbc);
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:2eb036d7f5487d9d2dd4331f6b22c403564d2d29c1848c35de2e6c2a77517f3f
+size 1003

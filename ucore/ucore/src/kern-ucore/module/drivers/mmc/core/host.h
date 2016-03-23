@@ -1,17 +1,3 @@
-/*
- *  linux/drivers/mmc/core/host.h
- *
- *  Copyright (C) 2003 Russell King, All Rights Reserved.
- *  Copyright 2007 Pierre Ossman
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
-#ifndef _MMC_CORE_HOST_H
-#define _MMC_CORE_HOST_H
-
-int mmc_register_host_class(void);
-void mmc_unregister_host_class(void);
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:cd317c3c1ffe23bf677dbee21f438b7f5801ca6da4a6efb8df98258bf2156d84
+size 457

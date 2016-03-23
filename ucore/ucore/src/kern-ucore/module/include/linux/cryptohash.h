@@ -1,12 +1,3 @@
-#ifndef __CRYPTOHASH_H
-#define __CRYPTOHASH_H
-
-#define SHA_DIGEST_WORDS 5
-#define SHA_WORKSPACE_WORDS 80
-
-void sha_init(__u32 * buf);
-void sha_transform(__u32 * digest, const char *data, __u32 * W);
-
-__u32 half_md4_transform(__u32 buf[4], __u32 const in[8]);
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:ff4fa53a5cc852fb54cd72e19d1a6861321a8bf824ab7c33cef792b98813ecf5
+size 267

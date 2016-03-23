@@ -1,15 +1,3 @@
-#ifndef __NET_TC_PED_H
-#define __NET_TC_PED_H
-
-#include <net/act_api.h>
-
-struct tcf_pedit {
-	struct tcf_common common;
-	unsigned char tcfp_nkeys;
-	unsigned char tcfp_flags;
-	struct tc_pedit_key *tcfp_keys;
-};
-#define to_pedit(pc) \
-	container_of(pc, struct tcf_pedit, common)
-
-#endif /* __NET_TC_PED_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:35af0414e5e1fb4d2707200003fc84fe531c7eb8a1b4d6653e34d4f7184d73b1
+size 305

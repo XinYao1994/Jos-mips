@@ -1,33 +1,3 @@
-#include <types.h>
-#include <sem.h>
-#include <sfs.h>
-
-void lock_sfs_fs(struct sfs_fs *sfs)
-{
-	down(&(sfs->fs_sem));
-}
-
-void lock_sfs_io(struct sfs_fs *sfs)
-{
-	down(&(sfs->io_sem));
-}
-
-void lock_sfs_mutex(struct sfs_fs *sfs)
-{
-	down(&(sfs->mutex_sem));
-}
-
-void unlock_sfs_fs(struct sfs_fs *sfs)
-{
-	up(&(sfs->fs_sem));
-}
-
-void unlock_sfs_io(struct sfs_fs *sfs)
-{
-	up(&(sfs->io_sem));
-}
-
-void unlock_sfs_mutex(struct sfs_fs *sfs)
-{
-	up(&(sfs->mutex_sem));
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:300526d115bf854b0a5a11a12d03f564cc9cf9dd4bd6236f721f782e4e8bc345
+size 455

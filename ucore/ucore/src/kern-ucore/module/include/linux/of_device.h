@@ -1,31 +1,3 @@
-#ifndef _LINUX_OF_DEVICE_H
-#define _LINUX_OF_DEVICE_H
-
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/mod_devicetable.h>
-
-#include <asm/of_device.h>
-
-#define	to_of_device(d) container_of(d, struct of_device, dev)
-
-extern const struct of_device_id *of_match_device(const struct of_device_id
-						  *matches,
-						  const struct of_device *dev);
-
-extern struct of_device *of_dev_get(struct of_device *dev);
-extern void of_dev_put(struct of_device *dev);
-
-extern int of_device_register(struct of_device *ofdev);
-extern void of_device_unregister(struct of_device *ofdev);
-extern void of_release_dev(struct device *dev);
-
-static inline void of_device_free(struct of_device *dev)
-{
-	of_release_dev(&dev->dev);
-}
-
-extern ssize_t of_device_get_modalias(struct of_device *ofdev,
-				      char *str, ssize_t len);
-
-#endif /* _LINUX_OF_DEVICE_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:d981a48b295e29b6848801b4c32173eed4d65fc081b16f2dab4b4aa1da1666df
+size 857

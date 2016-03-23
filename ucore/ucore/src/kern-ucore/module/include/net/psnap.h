@@ -1,17 +1,3 @@
-#ifndef _NET_PSNAP_H
-#define _NET_PSNAP_H
-
-extern struct datalink_proto *register_snap_client(unsigned char *desc,
-						   int (*rcvfunc) (struct
-								   sk_buff *,
-								   struct
-								   net_device *,
-								   struct
-								   packet_type
-								   *,
-								   struct
-								   net_device *
-								   orig_dev));
-extern void unregister_snap_client(struct datalink_proto *proto);
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:15ed31dc4dfd7dbfedc3d8b98da6f834d21ba10f7ef9bd04bfe6f4815a3fd169
+size 406

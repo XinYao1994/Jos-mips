@@ -1,12 +1,3 @@
-#ifndef __LINUX_LTALK_H
-#define __LINUX_LTALK_H
-
-#define LTALK_HLEN		1
-#define LTALK_MTU		600
-#define LTALK_ALEN		1
-
-#ifdef __KERNEL__
-extern struct net_device *alloc_ltalkdev(int sizeof_priv);
-#endif
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:e650dcb066de157a682f68ae1c24c354b848a4985ba533f1f5e9e632ed37cb9d
+size 209

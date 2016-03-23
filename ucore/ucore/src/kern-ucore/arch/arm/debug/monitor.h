@@ -1,15 +1,3 @@
-#ifndef __KERN_DEBUG_MONITOR_H__
-#define __KERN_DEBUG_MONITOR_H__
-
-#include <trap.h>
-
-void monitor(struct trapframe *tf);
-
-int mon_help(int argc, char **argv, struct trapframe *tf);
-int mon_kerninfo(int argc, char **argv, struct trapframe *tf);
-int mon_backtrace(int argc, char **argv, struct trapframe *tf);
-int mon_trapframe(int argc, char **argv, struct trapframe *tf);
-int mon_dump(int argc, char **argv, struct trapframe *tf);
-int mon_kgdb(int argc, char **argv, struct trapframe *tf);
-
-#endif /* !__KERN_DEBUG_MONITOR_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:b0ae78ac3589f680fcf8df21017139fe3f60a3b974d278db21675a2a228ec63c
+size 531

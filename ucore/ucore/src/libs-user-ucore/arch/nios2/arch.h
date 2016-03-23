@@ -1,11 +1,3 @@
-#ifndef __USER_LIBS_NIOS2_H__
-#define __USER_LIBS_NIOS2_H__
-
-#define do_div(n, base) ({                                          \
-            unsigned long __mod;                                    \
-            __mod = (n) % (base);                                   \
-            (n) /= (base);                                          \
-            __mod;                                                  \
-        })
-
-#endif /* !__USER_LIBS_NIOS2_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:4634efccab8532745df7dfbb4a171a9ee6c5b80a7892f8c41846054290e51aa0
+size 459

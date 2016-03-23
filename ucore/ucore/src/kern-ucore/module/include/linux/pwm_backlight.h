@@ -1,17 +1,3 @@
-/*
- * Generic PWM backlight driver data - see drivers/video/backlight/pwm_bl.c
- */
-#ifndef __LINUX_PWM_BACKLIGHT_H
-#define __LINUX_PWM_BACKLIGHT_H
-
-struct platform_pwm_backlight_data {
-	int pwm_id;
-	unsigned int max_brightness;
-	unsigned int dft_brightness;
-	unsigned int pwm_period_ns;
-	int (*init) (struct device * dev);
-	int (*notify) (int brightness);
-	void (*exit) (struct device * dev);
-};
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:f8d04216ce999c75f84a33a2420ca9b91d519c3db982275825b34e3738f2b666
+size 404

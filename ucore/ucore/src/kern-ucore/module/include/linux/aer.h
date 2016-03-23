@@ -1,32 +1,3 @@
-/*
- * Copyright (C) 2006 Intel Corp.
- *     Tom Long Nguyen (tom.l.nguyen@intel.com)
- *     Zhang Yanmin (yanmin.zhang@intel.com)
- */
-
-#ifndef _AER_H_
-#define _AER_H_
-
-#if defined(CONFIG_PCIEAER)
-/* pci-e port driver needs this function to enable aer */
-extern int pci_enable_pcie_error_reporting(struct pci_dev *dev);
-extern int pci_disable_pcie_error_reporting(struct pci_dev *dev);
-extern int pci_cleanup_aer_uncorrect_error_status(struct pci_dev *dev);
-#else
-static inline int pci_enable_pcie_error_reporting(struct pci_dev *dev)
-{
-	return -EINVAL;
-}
-
-static inline int pci_disable_pcie_error_reporting(struct pci_dev *dev)
-{
-	return -EINVAL;
-}
-
-static inline int pci_cleanup_aer_uncorrect_error_status(struct pci_dev *dev)
-{
-	return -EINVAL;
-}
-#endif
-
-#endif //_AER_H_
+version https://git-lfs.github.com/spec/v1
+oid sha256:4a417f066945cfe7d3db928f5ec735a45c560f3bf97fb0d80c2e9c6819997dd7
+size 774

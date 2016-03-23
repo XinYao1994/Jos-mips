@@ -1,6 +1,3 @@
-#ifndef _FALLOC_H_
-#define _FALLOC_H_
-
-#define FALLOC_FL_KEEP_SIZE	0x01	/* default is extend size */
-
-#endif /* _FALLOC_H_ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:d4974d856add45cee3c2c09eee88d42f9a8fc9d5c145db4ed73468ea0ae65688
+size 126

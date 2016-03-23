@@ -1,6 +1,3 @@
-ARCH_CFLAGS := -EL -mhw-div -mhw-mul -mno-hw-mulx -DSYSTEM_BUS_WIDTH=32 \
-               -pipe -DALT_NO_INSTRUCTION_EMULATION -Wno-traditional -G 0 \
-               -fomit-frame-pointer -Wall -O2
-ARCH_LDFLAGS := -m    nios2elf
-ARCH_OBJS := clone.o syscall.o libgcc.o
-ARCH_INITCODE_OBJ := initcode.o
+version https://git-lfs.github.com/spec/v1
+oid sha256:de246548ad3ab60de65fcab9abcf62e437dcd720eba8443e205f3cc700dbb402
+size 299

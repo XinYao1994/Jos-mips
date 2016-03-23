@@ -1,14 +1,3 @@
-SRCFILES	+= $(shell find arch/${ARCH} '(' '!' -regex '.*/_.*' ')' -and '(' -iname "*.c" -or -iname "*.S" ')' | sed -e 's!\./!!g')
-ARCH_DIRS	:= debug mm driver init libs sync process glue-ucore glue-ucore/libs syscall module
-T_CC_FLAGS	+= ${foreach dir,${ARCH_DIRS},-Iarch/${ARCH}/${dir}}
-
-LINK_FILE	:= arch/${ARCH}/ucore.ld
-
-include ${T_BASE}/mk/compk.mk
-include ${T_BASE}/mk/template.mk
-
-all: ${T_OBJ}/kern-bin
-
-${T_OBJ}/kern-bin: ${OBJFILES}
-	@echo LD $@
-	${V}${LD} -T ${LINK_FILE} -o$@ $+
+version https://git-lfs.github.com/spec/v1
+oid sha256:604ae35825f5341f8e5c1b3e9405c89c13e1b9c5a1109cd82071e41d2cc72d85
+size 492

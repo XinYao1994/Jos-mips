@@ -1,9 +1,3 @@
-@program        /testbin/sfs_filetest2
-@timeout	120
-@sfs_force_rebuild
-
-  - 'kernel_execve: pid = [0-9]{1,2}, name = "/testbin/sfs_filetest2".'
-    'sfs_filetest2 pass.'
-    'all user-mode processes have quit.'
-    'init check memory pass.'
-! - 'user panic at .*'
+version https://git-lfs.github.com/spec/v1
+oid sha256:84b70d685915581f315d808810d5bcbbccb7aea3c2f082f9d1adf3da5f5222f0
+size 264

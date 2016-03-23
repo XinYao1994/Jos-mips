@@ -1,14 +1,3 @@
-@program	/testbin/pipetest
-@failin         amd64
-
-  - 'kernel_execve: pid = [0-9]{1,2}, name = "/testbin/pipetest".'
-    'child write ok'
-    'parent read ok'
-    'pipetest step1 pass.'
-    'pipetest step2 pass.'
-    'pipetest step3 pass.'
-    'pipetest step4 pass.'
-    'pipetest pass.'
-    'all user-mode processes have quit.'
-    'init check memory pass.'
-! - 'user panic at .*'
+version https://git-lfs.github.com/spec/v1
+oid sha256:5014504cbae9e0f41e9548a5ac3ef5d6ddde39cc480d96b18dd0c037b9b7bbed
+size 360

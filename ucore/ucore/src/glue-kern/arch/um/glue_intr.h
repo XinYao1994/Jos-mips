@@ -1,22 +1,3 @@
-#ifndef __GLUE_INTR_H__
-#define __GLUE_INTR_H__
-
-#include <intr.h>
-#include <sync.h>
-
-/**
- * Umucore doesn't have the so-called 'trapframe'.
- *     This is hacked only because 'do_fork' needs it...
- */
-struct trapframe {
-	int (*fn) (void *);
-	void *arg;
-};
-
-#define local_intr_enable_hw  intr_enable()
-#define local_intr_disable_hw intr_disable()
-
-#define local_intr_save_hw(x)      local_intr_save(x)
-#define local_intr_restore_hw(x)   local_intr_restore(x)
-
-#endif /* !__GLUE_INTR_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:6868d4295ef25122370f7c3e88c8d7f164fe1a5dfccdfbd30bd289747d6eafbc
+size 490

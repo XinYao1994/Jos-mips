@@ -1,20 +1,3 @@
-#ifndef _CRAMFS_FS_SB
-#define _CRAMFS_FS_SB
-
-/*
- * cramfs super-block data in memory
- */
-struct cramfs_sb_info {
-	unsigned long magic;
-	unsigned long size;
-	unsigned long blocks;
-	unsigned long files;
-	unsigned long flags;
-};
-
-static inline struct cramfs_sb_info *CRAMFS_SB(struct super_block *sb)
-{
-	return sb->s_fs_info;
-}
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:d6f74ef4ab650671b07ef38773f7cf339581971e5306d2f10b4389ed0cd7b218
+size 333

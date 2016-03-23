@@ -1,3 +1,3 @@
-bin2flash --input="obj/sfs-orig.img" --output="obj/sfs.flash" --location=0x100000 --verbose 
-nios2-flash-programmer obj/sfs.flash --cable=1 --base=0xc0000000  --program --verbose -g --cable=1
-nios2-flash-programmer obj/sfs.flash --cable=1 --base=0xc0000000  --program --verbose -g --cable=2
+version https://git-lfs.github.com/spec/v1
+oid sha256:d3100aa6094ca24c8198d30c25ff115522b71efb0b28bafe88fcbf0c6d3223ee
+size 291

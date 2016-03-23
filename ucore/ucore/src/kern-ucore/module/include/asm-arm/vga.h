@@ -1,12 +1,3 @@
-#ifndef ASMARM_VGA_H
-#define ASMARM_VGA_H
-
-#include <linux/io.h>
-#include <mach/hardware.h>
-
-#define VGA_MAP_MEM(x,s)	(PCIMEM_BASE + (x))
-
-#define vga_readb(x)	(*((volatile unsigned char *)x))
-#define vga_writeb(x,y)	(*((volatile unsigned char *)y) = (x))
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:b65deb894dbca9ab181bcf28776c55cb32ea6475d0bcf49dd608867df58480ab
+size 264

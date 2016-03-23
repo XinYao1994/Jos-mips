@@ -1,7 +1,3 @@
-@program	/testbin/fread_test2
-
-  - 'kernel_execve: pid = [0-9]{1,2}, name = "/testbin/fread_test2".'
-    'fread_test2 pass.'
-    'all user-mode processes have quit.'
-    'init check memory pass.'
-! - 'user panic at .*'
+version https://git-lfs.github.com/spec/v1
+oid sha256:4eab49463769a5aabce6ebd99a4bceeb3effcd6e0db63302c6413b825b07eec8
+size 219

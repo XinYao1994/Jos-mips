@@ -1,6 +1,3 @@
-#ifndef ARCH_ARM_PLAT_OMAP4_KEYPAD_H
-#define ARCH_ARM_PLAT_OMAP4_KEYPAD_H
-
-extern int omap4_keyboard_init(struct omap4_keypad_platform_data *,
-			       struct omap_board_data *);
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:541824aea36826a0d3b05f8755d3250b939ddd2703c534ff5a919515a92c5fe6
+size 187

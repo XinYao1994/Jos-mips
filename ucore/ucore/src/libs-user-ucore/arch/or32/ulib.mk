@@ -1,11 +1,3 @@
-SRCFILES	+= $(filter %.c %.S, $(wildcard arch/${ARCH}/*))
-T_CC_FLAGS	+= -Iarch/${ARCH} -DNO_LOCK
-
-include ${T_BASE}/mk/compu.mk
-include ${T_BASE}/mk/template.mk
-
-all: ${T_OBJ}/ulib.a
-
-${T_OBJ}/ulib.a: ${OBJFILES}
-	@echo AR $@
-	${V}${TARGET_CC_PREFIX}ar -cr $@ $+
+version https://git-lfs.github.com/spec/v1
+oid sha256:a05994f15ce692ba1151e0470877ebbb46d441cf03bb04403ad54681c36d0e71
+size 263

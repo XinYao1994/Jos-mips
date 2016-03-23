@@ -1,13 +1,3 @@
-/*
- * Unix network namespace
- */
-#ifndef __NETNS_UNIX_H__
-#define __NETNS_UNIX_H__
-
-struct ctl_table_header;
-struct netns_unix {
-	int sysctl_max_dgram_qlen;
-	struct ctl_table_header *ctl;
-};
-
-#endif /* __NETNS_UNIX_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:730852d34887b00c90b4c91f6a6fd95ef4f8f1baccd54cddaaf2c33399094749
+size 222

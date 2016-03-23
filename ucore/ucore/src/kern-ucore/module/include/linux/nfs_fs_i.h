@@ -1,24 +1,3 @@
-#ifndef _NFS_FS_I
-#define _NFS_FS_I
-
-#include <asm/types.h>
-#include <linux/list.h>
-#include <linux/nfs.h>
-
-struct nlm_lockowner;
-
-/*
- * NFS lock info
- */
-struct nfs_lock_info {
-	u32 state;
-	struct nlm_lockowner *owner;
-	struct list_head list;
-};
-
-struct nfs4_lock_state;
-struct nfs4_lock_info {
-	struct nfs4_lock_state *owner;
-};
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:95e8654add17e2deb62dbe05c203c48a76f4cda91e11110d049eff5ede325c64
+size 339

@@ -1,15 +1,3 @@
-#ifndef _LINUX_PATH_H
-#define _LINUX_PATH_H
-
-struct dentry;
-struct vfsmount;
-
-struct path {
-	struct vfsmount *mnt;
-	struct dentry *dentry;
-};
-
-extern void path_get(struct path *);
-extern void path_put(struct path *);
-
-#endif /* _LINUX_PATH_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:dd673a50fb3c54a7c2bc354adeeb46a405133c2673d57e0a083b1a0e7be47d41
+size 245

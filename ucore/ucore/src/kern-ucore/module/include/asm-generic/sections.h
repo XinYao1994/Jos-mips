@@ -1,23 +1,3 @@
-#ifndef _ASM_GENERIC_SECTIONS_H_
-#define _ASM_GENERIC_SECTIONS_H_
-
-/* References to section boundaries */
-
-extern char _text[], _stext[], _etext[];
-extern char _data[], _sdata[], _edata[];
-extern char __bss_start[], __bss_stop[];
-extern char __init_begin[], __init_end[];
-extern char _sinittext[], _einittext[];
-extern char _end[];
-extern char __per_cpu_start[], __per_cpu_end[];
-extern char __kprobes_text_start[], __kprobes_text_end[];
-extern char __initdata_begin[], __initdata_end[];
-extern char __start_rodata[], __end_rodata[];
-
-/* function descriptor handling (if any).  Override
- * in asm/sections.h */
-#ifndef dereference_function_descriptor
-#define dereference_function_descriptor(p) (p)
-#endif
-
-#endif /* _ASM_GENERIC_SECTIONS_H_ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:d7da074c217eea0e47c2199ce55c9d23895ed98effaab1680d2bc0911bd5eb95
+size 744

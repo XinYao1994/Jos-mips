@@ -1,16 +1,3 @@
-#ifndef _X25DEVICE_H
-#define _X25DEVICE_H
-
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/skbuff.h>
-
-static inline __be16 x25_type_trans(struct sk_buff *skb, struct net_device *dev)
-{
-	skb->dev = dev;
-	skb_reset_mac_header(skb);
-	skb->pkt_type = PACKET_HOST;
-
-	return htons(ETH_P_X25);
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:a9a8d1729bcf9d8b705d487baba99f2f27a8221acf4a8c983c4103afff3b389a
+size 321

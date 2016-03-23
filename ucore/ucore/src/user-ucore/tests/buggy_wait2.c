@@ -1,22 +1,3 @@
-#include <stdio.h>
-#include <ulib.h>
-#include <unistd.h>
-
-uintptr_t addr = 0;
-const size_t size = 4096;
-
-int main(void)
-{
-	assert(mmap(&addr, size, MMAP_WRITE) == 0);
-
-	int *exit_codep = (int *)addr, pid;
-
-	if ((pid = fork()) == 0) {
-		cprintf("child fork ok.\n");
-		exit(0);
-	}
-
-	assert(waitpid(pid, exit_codep) == 0 && *exit_codep == 0);
-	cprintf("buggy_wait2 pass.\n");
-	return 0;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3b33b234945ec3f6e1d54bb30967bbefaa57d5c47f6d82e2b64934fb37d5923b
+size 386

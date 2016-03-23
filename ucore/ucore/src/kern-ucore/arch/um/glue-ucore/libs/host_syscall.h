@@ -1,17 +1,3 @@
-#ifndef __ARCH_UM_INCLUDE_HOST_SYSCALL_H__
-#define __ARCH_UM_INCLUDE_HOST_SYSCALL_H__
-
-#include <types.h>
-
-struct proc_struct;
-
-int host_mmap(struct proc_struct *proc,
-	      void *addr, size_t length, int prot, int flags,
-	      int fd, uint32_t offset);
-int host_munmap(struct proc_struct *proc, void *addr, size_t length);
-int host_assign(struct proc_struct *proc, uintptr_t addr, uint32_t data);
-int host_getvalue(struct proc_struct *proc, uintptr_t addr, uint32_t * data);
-int host_map_user(struct proc_struct *proc,
-		  uintptr_t addr, size_t len, int is_write);
-
-#endif /* !__ARCH_UM_INCLUDE_HOST_SYSCALL_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:8f845e6e3c46866def35c9ddca33ce40b234428d7665b73947d9b1a1f8417f07
+size 619

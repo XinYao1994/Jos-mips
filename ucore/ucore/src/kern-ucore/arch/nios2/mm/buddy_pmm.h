@@ -1,8 +1,3 @@
-#ifndef __KERN_MM_BUDDY_PMM_H__
-#define __KERN_MM_BUDDY_PMM_H__
-
-#include <pmm.h>
-
-extern const struct pmm_manager buddy_pmm_manager;
-
-#endif /* !__KERN_MM_BUDDY_PMM_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:817eeab54c27fc759dc8271f38bd3e0779a0e46d76d8e1727e05238a1bd1760d
+size 173

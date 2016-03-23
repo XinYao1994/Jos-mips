@@ -1,16 +1,3 @@
-OUTPUT_FORMAT("elf32-or32", "elf32-or32", "elf32-or32")
-OUTPUT_ARCH(or32)
-
-SECTIONS {
-    /* Load the kernel at this address: "." means the current address */
-	. = 0x1ffe00;
-
-	.text : {
-		*(.entry)
-	    *(.text)
-	}
-
-    /DISCARD/ : {
-        *(.eh_frame .note.GNU-stack)
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6d59fc531910c1d381e5d23d54139f56126287d157e821b104a0546a770ea82d
+size 279

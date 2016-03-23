@@ -1,30 +1,3 @@
-#include <stdio.h>
-#include <ulib.h>
-
-int magic = -0x10384;
-
-int main(void)
-{
-	int pid, code;
-	cprintf("I am the parent. Forking the child...\n");
-	if ((pid = fork()) == 0) {
-		cprintf("I am the child.\n");
-		yield();
-		yield();
-		yield();
-		yield();
-		yield();
-		yield();
-		yield();
-		exit(magic);
-	}
-	assert(pid > 0);
-	cprintf("I am the parent, waiting now..\n");
-
-	assert(waitpid(pid, &code) == 0 && code == magic);
-	assert(waitpid(pid, &code) != 0 && wait() != 0);
-	cprintf("waitpid %d ok.\n", pid);
-
-	cprintf("exit pass.\n");
-	return 0;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b2fe272fd65bec0060bc2e7cf8c0acf582a098b450774ae1f0780143260b59a4
+size 544

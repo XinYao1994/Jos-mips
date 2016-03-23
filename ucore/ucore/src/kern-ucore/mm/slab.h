@@ -1,17 +1,3 @@
-#ifndef __KERN_MM_SLAB_H__
-#define __KERN_MM_SLAB_H__
-
-#include <types.h>
-
-#ifndef KMALLOC_MAX_ORDER
-#define KMALLOC_MAX_ORDER       10
-#endif
-
-void slab_init(void);
-
-void *kmalloc(size_t n);
-void kfree(void *objp);
-
-size_t slab_allocated(void);
-
-#endif /* !__KERN_MM_SLAB_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:7b9c630d554838f76899dceffde2742c589f8c583abb220a2cedc1e7b0e0a5b7
+size 280

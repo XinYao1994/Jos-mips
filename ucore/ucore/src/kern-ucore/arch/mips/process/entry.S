@@ -1,16 +1,3 @@
-.text
-.globl kernel_thread_entry
-/* $a0 = arg, $a1 = func
- * see proc.c:kernel_thread
- */
-kernel_thread_entry:        # void kernel_thread(void)
-  addiu $sp, $sp, -16
-  jal $a1
-  nop
-  move $a0, $v0
-  la  $t0, do_exit
-  jal $t0 
-  nop
-  /* never here */
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:8ce65a5fd0e5cbb06d313c64522cf7dc6a46af7bbc25303ca4862d15b818238c
+size 256

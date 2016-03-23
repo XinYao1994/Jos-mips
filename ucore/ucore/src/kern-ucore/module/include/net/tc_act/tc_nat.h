@@ -1,21 +1,3 @@
-#ifndef __NET_TC_NAT_H
-#define __NET_TC_NAT_H
-
-#include <linux/types.h>
-#include <net/act_api.h>
-
-struct tcf_nat {
-	struct tcf_common common;
-
-	__be32 old_addr;
-	__be32 new_addr;
-	__be32 mask;
-	u32 flags;
-};
-
-static inline struct tcf_nat *to_tcf_nat(struct tcf_common *pc)
-{
-	return container_of(pc, struct tcf_nat, common);
-}
-
-#endif /* __NET_TC_NAT_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:68241938a42de193af30edab1db44269a1e8fc28a2a3d423a70799f52c83fd05
+size 356

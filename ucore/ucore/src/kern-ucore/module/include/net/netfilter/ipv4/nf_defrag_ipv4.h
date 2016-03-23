@@ -1,6 +1,3 @@
-#ifndef _NF_DEFRAG_IPV4_H
-#define _NF_DEFRAG_IPV4_H
-
-extern void nf_defrag_ipv4_enable(void);
-
-#endif /* _NF_DEFRAG_IPV4_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:06e5bdf12b3ec1661d1ec27a426debad62f8a26abecaa75aa5aa5c3f77160fdf
+size 126

@@ -1,19 +1,3 @@
-#ifndef __KERN_SYNC_MBOX_H__
-#define __KERN_SYNC_MBOX_H__
-
-#include <types.h>
-
-void mbox_init(void);
-
-struct mboxbuf;
-struct mboxinfo;
-
-int ipc_mbox_init(unsigned int max_slots);
-int ipc_mbox_send(int id, struct mboxbuf *buf, unsigned int timeout);
-int ipc_mbox_recv(int id, struct mboxbuf *buf, unsigned int timeout);
-int ipc_mbox_free(int id);
-int ipc_mbox_info(int id, struct mboxinfo *info);
-
-void mbox_cleanup(void);
-
-#endif /* !__KERN_SYNC_MBOX_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:e43049d278d7725edc68573f2c11a0da57496e1a3734a60ad8bdd5bd8f7f258f
+size 458

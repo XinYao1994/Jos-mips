@@ -1,10 +1,3 @@
-#ifndef __KERN_DRIVER_CONSOLE_H__
-#define __KERN_DRIVER_CONSOLE_H__
-
-void cons_init(void);
-void cons_putc(int c);
-int cons_getc(void);
-void serial_intr(void);
-void kbd_intr(void);
-
-#endif /* !__KERN_DRIVER_CONSOLE_H__ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:297d01ad8a2430ae28d42fdc4f644b5ee5cea48db681632e0f8fb27c08409d60
+size 221

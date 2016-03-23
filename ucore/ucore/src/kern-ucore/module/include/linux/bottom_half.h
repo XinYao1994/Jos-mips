@@ -1,9 +1,3 @@
-#ifndef _LINUX_BH_H
-#define _LINUX_BH_H
-
-extern void local_bh_disable(void);
-extern void _local_bh_enable(void);
-extern void local_bh_enable(void);
-extern void local_bh_enable_ip(unsigned long ip);
-
-#endif /* _LINUX_BH_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:679d2de5755a00f6d3e8b7b3fc38ae1e214a1e26661e4829840041ae1c1652e4
+size 224

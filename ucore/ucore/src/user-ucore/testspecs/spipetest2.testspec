@@ -1,21 +1,3 @@
-@program	/testbin/spipetest2
-@arch		i386
-@timeout	240
-
-  - 'kernel_execve: pid = [0-9]{1,2}, name = "/testbin/spipetest2".'
-    '0 reads 200000'
-    '1 reads 200000'
-    '2 reads 200000'
-    '3 reads 200000'
-    '4 reads 200000'
-    '5 reads 200000'
-    '6 reads 200000'
-    '7 reads 200000'
-    '8 reads 200000'
-    '9 reads 200000'
-    'spipetest2 pass.'
-    'all user-mode processes have quit.'
-    'init check memory pass.'
-!   'pipe is closed, too early.'
-!   'spipe close failed.'
-! - 'user panic at .*'
+version https://git-lfs.github.com/spec/v1
+oid sha256:0956aa40a0aef4f015b61d7ca5c708f2c62e73c02cf77c1f4b1fad6467be1875
+size 510

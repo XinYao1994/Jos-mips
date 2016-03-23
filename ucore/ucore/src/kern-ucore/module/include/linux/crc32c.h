@@ -1,11 +1,3 @@
-#ifndef _LINUX_CRC32C_H
-#define _LINUX_CRC32C_H
-
-#include <linux/types.h>
-
-extern u32 crc32c(u32 crc, const void *address, unsigned int length);
-
-/* This macro exists for backwards-compatibility. */
-#define crc32c_le crc32c
-
-#endif /* _LINUX_CRC32C_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:61858bec602de68484f9f0bc572c55425a1a8436e18f3e0ca4d87425c2056f54
+size 254

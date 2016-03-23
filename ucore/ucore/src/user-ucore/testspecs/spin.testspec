@@ -1,13 +1,3 @@
-@program	/testbin/spin
-
-  - 'kernel_execve: pid = [0-9]{1,2}, name = "/testbin/spin".'
-    'I am the parent. Forking the child...'
-    'I am the parent. Running the child...'
-    'I am the child. spinning ...'
-    'I am the parent.  Killing the child...'
-    'kill returns 0'
-    'wait returns 0'
-    'spin may pass.'
-    'all user-mode processes have quit.'
-    'init check memory pass.'
-! - 'user panic at .*'
+version https://git-lfs.github.com/spec/v1
+oid sha256:4c5fa561d26cdd706c618b8374d7133d97870b6c2a389bdbbb1d909046569a45
+size 412

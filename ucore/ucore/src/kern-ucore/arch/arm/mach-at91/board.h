@@ -1,24 +1,3 @@
-/*
- * =====================================================================================
- *
- *       Filename:  board.h
- *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  03/17/2012 02:19:11 PM
- *       Revision:  none
- *       Compiler:  arm-linux-gcc 4.4
- *
- *         Author:  Chen Yuheng (Chen Yuheng), chyh1990@163.com
- *   Organization:  Tsinghua Unv.
- *
- * =====================================================================================
- */
-
-#ifndef  MACH_BOARD_H
-#define  MACH_BOARD_H
-
-#include "board-at91.h"
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:c72d121bc49f2b6081c985196d0292b74d1d77d0b1f145920f4183db7885bc20
+size 555

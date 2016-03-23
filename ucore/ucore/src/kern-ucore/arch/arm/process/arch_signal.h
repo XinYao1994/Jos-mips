@@ -1,32 +1,3 @@
-/*
- * =====================================================================================
- *
- *       Filename:  arch_signal.h
- *
- *    Description:  
- *
- *        Version:  1.0
- *        Created:  07/27/2012 06:49:50 PM
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Chen Yuheng (Chen Yuheng), chyh1990@163.com
- *   Organization:  Tsinghua Unv.
- *
- * =====================================================================================
- */
-
-#ifndef __ARCH_ARM_ARCH_SIGNAL_H
-#define __ARCH_ARM_ARCH_SIGNAL_H
-#include <signal.h>
-
-struct sigframe {
-	uintptr_t pretcode;
-	int sign;
-	struct trapframe tf;
-	sigset_t old_blocked;
-	//there's fpstate in linux, but nothing here
-	unsigned int retcode[2];
-};
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:c7e6aac915815c883605a00f31557b1b6bbc2c039229f8d5bc5b7eea077f5172
+size 735

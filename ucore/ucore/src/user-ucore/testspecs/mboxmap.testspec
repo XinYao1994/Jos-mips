@@ -1,13 +1,3 @@
-@program	/testbin/mboxmap
-@timeout	20
-@failin         arm
-
-  - 'kernel_execve: pid = [0-9]{1,2}, name = "/testbin/mboxmap".'
-    'fork children ok.'
-    'wait children ok.'
-    'mboxmap pass.'
-!   'send data error!!'
-! - '^wrong: .*'
-    'all user-mode processes have quit.'
-    'init check memory pass.'
-! - 'user panic at .*'
+version https://git-lfs.github.com/spec/v1
+oid sha256:8156882a6269afebf1c6caad8fb4824a99dbbdedca87c205c657cde31bd882ef
+size 308

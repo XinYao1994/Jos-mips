@@ -1,9 +1,3 @@
-#ifndef _BCD_H
-#define _BCD_H
-
-#include <linux/compiler.h>
-
-unsigned bcd2bin(unsigned char val) __attribute_const__;
-unsigned char bin2bcd(unsigned val) __attribute_const__;
-
-#endif /* _BCD_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:def3842840e8ad8cc38c3ec143d02737fb01f052f336265c24c8d7fee8795f32
+size 195

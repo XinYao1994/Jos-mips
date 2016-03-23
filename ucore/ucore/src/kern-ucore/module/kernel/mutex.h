@@ -1,30 +1,3 @@
-/*
- * Mutexes: blocking mutual exclusion locks
- *
- * started by Ingo Molnar:
- *
- *  Copyright (C) 2004, 2005, 2006 Red Hat, Inc., Ingo Molnar <mingo@redhat.com>
- *
- * This file contains mutex debugging related internal prototypes, for the
- * !CONFIG_DEBUG_MUTEXES case. Most of them are NOPs:
- */
-
-#define spin_lock_mutex(lock, flags) \
-		do { spin_lock(lock); (void)(flags); } while (0)
-#define spin_unlock_mutex(lock, flags) \
-		do { spin_unlock(lock); (void)(flags); } while (0)
-#define mutex_remove_waiter(lock, waiter, ti) \
-		__list_del((waiter)->list.prev, (waiter)->list.next)
-
-#define debug_mutex_set_owner(lock, new_owner)		do { } while (0)
-#define debug_mutex_clear_owner(lock)			do { } while (0)
-#define debug_mutex_wake_waiter(lock, waiter)		do { } while (0)
-#define debug_mutex_free_waiter(waiter)			do { } while (0)
-#define debug_mutex_add_waiter(lock, waiter, ti)	do { } while (0)
-#define debug_mutex_unlock(lock)			do { } while (0)
-#define debug_mutex_init(lock, name, key)		do { } while (0)
-
-static inline void
-debug_mutex_lock_common(struct mutex *lock, struct mutex_waiter *waiter)
-{
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5236ef56d2f8251d3655f270b7296b8336884ffe03459120a84d114dc37b120a
+size 1106
